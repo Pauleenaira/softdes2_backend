@@ -1,0 +1,21 @@
+ingredient_id,ingredient_name,unit,stock_qty,reorder_level,reorder_qty,storage_type,expiry_date,supplier
+ING001,Black Tea Leaves,g,5000,1000,200,dry,12/31/2026,supplier_A
+ING002,Green Tea Leaves,g,4000,800,200,dry,12/31/2026,supplier_A
+ING003,Coffee Beans,g,6000,1500,300,dry,12/31/2026,supplier_B
+ING004,Milk,ml,20000,5000,1000,cold,4/25/2026,supplier_C
+ING005,Condensed Milk,ml,10000,2000,500,ambient,8/30/2026,supplier_C
+ING006,Sugar Syrup,ml,15000,3000,500,ambient,9/15/2026,supplier_A
+ING007,Brown Sugar,g,8000,2000,500,ambient,10/10/2026,supplier_A
+ING008,Matcha Powder,g,2000,500,100,dry,11/20/2026,supplier_D
+ING009,Chocolate Powder,g,3000,700,200,dry,11/30/2026,supplier_D
+ING010,Strawberry Syrup,ml,5000,1000,300,ambient,7/10/2026,supplier_E
+ING011,Blueberry Syrup,ml,5000,1000,300,ambient,7/10/2026,supplier_E
+ING012,Peach Syrup,ml,5000,1000,300,ambient,7/10/2026,supplier_E
+ING013,Lychee Syrup,ml,5000,1000,300,ambient,7/10/2026,supplier_E
+ING014,Yakult,bottles,200,50,20,cold,4/20/2026,supplier_F
+ING015,Nata de Coco,g,3000,800,200,cold,6/15/2026,supplier_F
+ING016,Chia Seeds,g,1500,300,100,dry,10/1/2026,supplier_G
+ING017,Boba Pearls,g,4000,1000,300,ambient,9/1/2026,supplier_G
+ING018,Whipping Cream,ml,5000,1200,300,cold,5/10/2026,supplier_C
+ING019,Ice,kg,100,30,10,frozen,N/A,inhouse
+ING020,Water,L,500,100,50,ambient,N/A,inhouse
