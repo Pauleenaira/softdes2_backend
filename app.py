@@ -15,7 +15,8 @@ from routes.rpa_routes import rpa_bp  # For monitoring automated workflows [cite
 app = Flask(__name__)
 
 # 1. CORS: Facilitates data exchange between the React client and Flask server [cite: 12, 18]
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+# Replace 'your-site.vercel.app' with your ACTUAL Vercel URL
+CORS(app, resources={r"/api/*": {"origins": ["https://softdes2-frontend.vercel.app", "http://localhost:3000"]}})
 
 # 2. FAIL-SAFE TABLE CREATION: Ensures reliable back-end inventory and record maintenance [cite: 134]
 def init_sqlite_db():

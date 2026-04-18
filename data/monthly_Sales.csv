@@ -5,10 +5,10 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1001,4,3/21/2026 7:35,44,Strawberry Lemon,Lemonade,Regular,2,60,Nata,20,140,Cash,7:35:57
 1001,5,3/21/2026 18:00,21,Lychee,Oolong Tea,Grande,1,55,Chia Seeds,15,70,Cash,18:00:33
 1001,6,3/21/2026 17:44,6,Strawberry,Yogurt Smoothies,Venti,1,70,None,0,70,Cash,17:44:25
-1002,7,4/7/2026 18:03,23,Strawberry Lemon,Lemonade,Grande,1,60,None,0,60,Cash,18:03:52
-1002,8,4/7/2026 17:03,17,Nutella,Non-Coffee,Venti,1,75,None,0,75,Cash,17:03:39
+1002,7,04/07/2026 18:03,23,Strawberry Lemon,Lemonade,Grande,1,60,None,0,60,Cash,18:03:52
+1002,8,04/07/2026 17:03,17,Nutella,Non-Coffee,Venti,1,75,None,0,75,Cash,17:03:39
 1003,9,4/16/2026 10:16,11,Blue Lemonade,Lemonade,Venti,2,60,None,0,120,Cash,10:16:23
-1004,10,4/10/2026 17:56,4,Strawberry Lemon,Lemonade,Regular,2,60,Yakult,30,150,Cash,17:56:50
+1004,10,04/10/2026 17:56,4,Strawberry Lemon,Lemonade,Regular,2,60,Yakult,30,150,Cash,17:56:50
 1005,11,3/28/2026 10:21,36,Matcha,Milk Tea,Grande,1,48,Nata,10,58,Cash,10:21:40
 1005,12,3/28/2026 10:04,15,Strawberry Lemon,Lemonade,Venti,1,60,Chia Seeds,15,75,Cash,10:04:24
 1006,13,4/14/2026 17:03,50,Green Apple,Fruit Soda,Regular,2,68,None,0,136,Cash,17:03:48
@@ -23,11 +23,11 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1009,22,3/29/2026 18:37,35,Blue Lemonade,Lemonade,Regular,1,60,None,0,60,Cash,18:37:54
 1010,23,3/28/2026 18:47,19,Blue Lemonade,Lemonade,Grande,2,60,Nata,20,140,Cash,18:47:24
 1010,24,3/28/2026 16:02,17,Strawberry,Yogurt Smoothies,Venti,2,70,Boba Pearl,20,160,Cash,16:02:12
-1011,25,4/5/2026 16:58,20,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,16:58:35
-1011,26,4/5/2026 16:04,43,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,16:04:55
+1011,25,04/05/2026 16:58,20,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,16:58:35
+1011,26,04/05/2026 16:04,43,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,16:04:55
 1012,27,4/15/2026 9:20,9,Matcha,Milk Tea,Regular,2,48,Yakult,30,126,Cash,9:20:42
-1013,28,4/10/2026 11:14,26,Matcha,Milk Tea,Grande,2,48,Whip Cream,20,116,Cash,11:14:06
-1013,29,4/10/2026 8:36,42,Iced Latte,Vietnamese Coffee,Regular,2,48,Whip Cream,20,116,Cash,8:36:03
+1013,28,04/10/2026 11:14,26,Matcha,Milk Tea,Grande,2,48,Whip Cream,20,116,Cash,11:14:06
+1013,29,04/10/2026 8:36,42,Iced Latte,Vietnamese Coffee,Regular,2,48,Whip Cream,20,116,Cash,8:36:03
 1014,30,3/27/2026 14:27,6,Matcha,Milk Tea,Venti,2,48,Whip Cream,20,116,Cash,14:27:31
 1014,31,3/27/2026 17:39,4,Matcha,Milk Tea,Grande,2,48,Yakult,30,126,Cash,17:39:12
 1014,32,3/27/2026 16:59,38,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,16:59:46
@@ -45,11 +45,11 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1020,44,3/29/2026 16:04,43,Americano,Hot Coffee,Venti,1,58,Whip Cream,10,68,Cash,16:04:12
 1020,45,3/29/2026 16:13,41,Blue Lemonade,Lemonade,Regular,2,60,Whip Cream,20,140,Cash,16:13:44
 1020,46,3/29/2026 16:20,22,Cookies & Cream,Non-Coffee Frappe,Grande,2,80,Whip Cream,20,180,Cash,16:20:57
-1021,47,4/11/2026 18:03,31,Blue Lemonade,Lemonade,Grande,2,60,None,0,120,Cash,18:03:00
-1021,48,4/11/2026 9:27,4,Strawberry,Green Tea,Venti,1,65,Chia Seeds,15,80,Cash,9:27:46
-1021,49,4/11/2026 9:00,27,Caramel,Frappuccino,Venti,2,85,Yakult,30,200,Cash,9:00:20
-1022,50,4/12/2026 17:03,5,Strawberry Lemon,Lemonade,Venti,1,60,Boba Pearl,10,70,Cash,17:03:51
-1022,51,4/12/2026 7:56,10,Strawberry Lemon,Lemonade,Grande,1,60,None,0,60,Cash,7:56:11
+1021,47,04/11/2026 18:03,31,Blue Lemonade,Lemonade,Grande,2,60,None,0,120,Cash,18:03:00
+1021,48,04/11/2026 9:27,4,Strawberry,Green Tea,Venti,1,65,Chia Seeds,15,80,Cash,9:27:46
+1021,49,04/11/2026 9:00,27,Caramel,Frappuccino,Venti,2,85,Yakult,30,200,Cash,9:00:20
+1022,50,04/12/2026 17:03,5,Strawberry Lemon,Lemonade,Venti,1,60,Boba Pearl,10,70,Cash,17:03:51
+1022,51,04/12/2026 7:56,10,Strawberry Lemon,Lemonade,Grande,1,60,None,0,60,Cash,7:56:11
 1023,52,3/22/2026 7:45,28,Strawberry,Green Tea,Venti,2,65,Yakult,30,160,Cash,7:45:14
 1023,53,3/22/2026 9:58,38,Strawberry,Yogurt Smoothies,Grande,2,70,Boba Pearl,20,160,Cash,9:58:20
 1023,54,3/22/2026 10:41,39,Strawberry Lemon,Lemonade,Grande,1,60,None,0,60,Cash,10:41:36
@@ -64,34 +64,34 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1027,63,3/30/2026 19:26,25,Strawberry,Yogurt Smoothies,Regular,2,70,None,0,140,Cash,19:26:12
 1027,64,3/30/2026 17:20,42,Strawberry,Green Tea,Venti,2,65,Whip Cream,20,150,Cash,17:20:22
 1027,65,3/30/2026 8:35,14,Green Apple,Fruit Soda,Venti,1,68,Nata,10,78,Cash,8:35:36
-1028,66,4/1/2026 18:45,39,Iced Latte,Vietnamese Coffee,Regular,1,48,None,0,48,Cash,18:45:01
-1028,67,4/1/2026 8:28,27,Matcha,Milk Tea,Grande,1,48,None,0,48,Cash,8:28:37
+1028,66,04/01/2026 18:45,39,Iced Latte,Vietnamese Coffee,Regular,1,48,None,0,48,Cash,18:45:01
+1028,67,04/01/2026 8:28,27,Matcha,Milk Tea,Grande,1,48,None,0,48,Cash,8:28:37
 1029,68,3/18/2026 17:52,36,Matcha,Milk Tea,Venti,1,48,Boba Pearl,10,58,Cash,17:52:41
 1029,69,3/18/2026 17:27,14,Nutella,Non-Coffee,Venti,2,75,Nata,20,170,Cash,17:27:32
-1030,70,4/5/2026 18:14,8,Green Apple,Fruit Soda,Grande,1,68,None,0,68,Cash,18:14:18
-1030,71,4/5/2026 17:58,46,Cookies & Cream,Non-Coffee Frappe,Regular,2,80,None,0,160,Cash,17:58:22
-1030,72,4/5/2026 8:02,47,Iced Latte,Vietnamese Coffee,Venti,1,48,Yakult,15,63,Cash,8:02:57
+1030,70,04/05/2026 18:14,8,Green Apple,Fruit Soda,Grande,1,68,None,0,68,Cash,18:14:18
+1030,71,04/05/2026 17:58,46,Cookies & Cream,Non-Coffee Frappe,Regular,2,80,None,0,160,Cash,17:58:22
+1030,72,04/05/2026 8:02,47,Iced Latte,Vietnamese Coffee,Venti,1,48,Yakult,15,63,Cash,8:02:57
 1031,73,3/25/2026 16:10,23,Matcha,Milk Tea,Grande,2,48,None,0,96,Cash,16:10:04
 1032,74,3/26/2026 8:20,24,Blue Lemonade,Lemonade,Grande,1,60,None,0,60,Cash,8:20:38
 1033,75,3/25/2026 17:27,39,Nutella,Non-Coffee,Grande,2,75,Whip Cream,20,170,Cash,17:27:30
 1033,76,3/25/2026 11:24,27,Strawberry Lemon,Lemonade,Venti,1,60,Nata,10,70,Cash,11:24:03
 1033,77,3/25/2026 18:00,37,Lychee,Oolong Tea,Venti,1,55,None,0,55,Cash,18:00:14
-1034,78,4/5/2026 9:03,21,Blue Lemonade,Lemonade,Regular,2,60,Whip Cream,20,140,Cash,9:03:03
-1034,79,4/5/2026 8:03,4,Matcha,Milk Tea,Grande,2,48,None,0,96,Cash,8:03:58
-1034,80,4/5/2026 9:15,14,Americano,Hot Coffee,Venti,1,58,Whip Cream,10,68,Cash,9:15:55
-1034,81,4/5/2026 15:38,23,Americano,Hot Coffee,Regular,1,58,None,0,58,Cash,15:38:47
+1034,78,04/05/2026 9:03,21,Blue Lemonade,Lemonade,Regular,2,60,Whip Cream,20,140,Cash,9:03:03
+1034,79,04/05/2026 8:03,4,Matcha,Milk Tea,Grande,2,48,None,0,96,Cash,8:03:58
+1034,80,04/05/2026 9:15,14,Americano,Hot Coffee,Venti,1,58,Whip Cream,10,68,Cash,9:15:55
+1034,81,04/05/2026 15:38,23,Americano,Hot Coffee,Regular,1,58,None,0,58,Cash,15:38:47
 1035,82,3/29/2026 12:37,27,Biscoff Latte,Premium,Venti,1,80,None,0,80,Cash,12:37:08
 1035,83,3/29/2026 10:21,12,Caramel,Frappuccino,Regular,2,85,Whip Cream,20,190,Cash,10:21:35
 1035,84,3/29/2026 10:42,7,Green Apple,Fruit Soda,Venti,1,68,None,0,68,Cash,10:42:46
-1036,85,4/7/2026 8:27,24,Green Apple,Fruit Soda,Regular,1,68,Chia Seeds,15,83,Cash,8:27:32
-1036,86,4/7/2026 17:52,12,Green Apple,Fruit Soda,Venti,1,68,None,0,68,Cash,17:52:46
-1036,87,4/7/2026 8:03,45,Strawberry Lemon,Lemonade,Grande,1,60,Whip Cream,10,70,Cash,8:03:44
-1037,88,4/9/2026 17:19,5,Green Apple,Fruit Soda,Grande,2,68,Yakult,30,166,Cash,17:19:35
+1036,85,04/07/2026 8:27,24,Green Apple,Fruit Soda,Regular,1,68,Chia Seeds,15,83,Cash,8:27:32
+1036,86,04/07/2026 17:52,12,Green Apple,Fruit Soda,Venti,1,68,None,0,68,Cash,17:52:46
+1036,87,04/07/2026 8:03,45,Strawberry Lemon,Lemonade,Grande,1,60,Whip Cream,10,70,Cash,8:03:44
+1037,88,04/09/2026 17:19,5,Green Apple,Fruit Soda,Grande,2,68,Yakult,30,166,Cash,17:19:35
 1038,89,4/16/2026 16:42,1,Blue Lemonade,Lemonade,Regular,1,60,None,0,60,Cash,16:42:29
 1038,90,4/16/2026 17:55,7,Strawberry Lemon,Lemonade,Venti,1,60,Nata,10,70,Cash,17:55:41
-1039,91,4/12/2026 16:05,42,Strawberry,Yogurt Smoothies,Venti,2,70,Boba Pearl,20,160,Cash,16:05:46
-1039,92,4/12/2026 18:21,5,Cookies & Cream,Non-Coffee Frappe,Regular,2,80,None,0,160,Cash,18:21:54
-1039,93,4/12/2026 18:06,25,Caramel,Frappuccino,Venti,2,85,Yakult,30,200,Cash,18:06:34
+1039,91,04/12/2026 16:05,42,Strawberry,Yogurt Smoothies,Venti,2,70,Boba Pearl,20,160,Cash,16:05:46
+1039,92,04/12/2026 18:21,5,Cookies & Cream,Non-Coffee Frappe,Regular,2,80,None,0,160,Cash,18:21:54
+1039,93,04/12/2026 18:06,25,Caramel,Frappuccino,Venti,2,85,Yakult,30,200,Cash,18:06:34
 1040,94,4/15/2026 9:50,10,Strawberry Lemon,Lemonade,Regular,1,60,Chia Seeds,15,75,Cash,9:50:54
 1040,95,4/15/2026 16:26,25,Strawberry,Green Tea,Venti,1,65,Boba Pearl,10,75,Cash,16:26:52
 1040,96,4/15/2026 18:14,10,Blue Lemonade,Lemonade,Grande,1,60,Chia Seeds,15,75,Cash,18:14:03
@@ -101,35 +101,35 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1042,100,3/26/2026 9:12,47,Matcha,Milk Tea,Regular,1,48,Nata,10,58,Cash,9:12:37
 1042,101,3/26/2026 9:44,22,Strawberry Lemon,Lemonade,Regular,1,60,Boba Pearl,10,70,Cash,9:44:34
 1042,102,3/26/2026 18:41,19,Americano,Hot Coffee,Venti,1,58,Boba Pearl,10,68,Cash,18:41:12
-1043,103,4/6/2026 17:37,16,Green Apple,Fruit Soda,Venti,2,68,Chia Seeds,30,166,Cash,17:37:38
-1043,104,4/6/2026 9:32,16,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,9:32:08
-1043,105,4/6/2026 8:59,17,Matcha,Milk Tea,Grande,2,48,None,0,96,Cash,8:59:09
-1044,106,4/2/2026 17:39,47,Nutella,Non-Coffee,Grande,1,75,Nata,10,85,Cash,17:39:31
+1043,103,04/06/2026 17:37,16,Green Apple,Fruit Soda,Venti,2,68,Chia Seeds,30,166,Cash,17:37:38
+1043,104,04/06/2026 9:32,16,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,9:32:08
+1043,105,04/06/2026 8:59,17,Matcha,Milk Tea,Grande,2,48,None,0,96,Cash,8:59:09
+1044,106,04/02/2026 17:39,47,Nutella,Non-Coffee,Grande,1,75,Nata,10,85,Cash,17:39:31
 1045,107,3/24/2026 9:26,4,Green Apple,Fruit Soda,Grande,2,68,None,0,136,Cash,9:26:37
 1046,108,3/21/2026 10:35,14,Green Apple,Fruit Soda,Venti,1,68,Chia Seeds,15,83,Cash,10:35:23
 1046,109,3/21/2026 16:13,18,Blue Lemonade,Lemonade,Grande,1,60,Nata,10,70,Cash,16:13:02
-1047,110,4/6/2026 8:36,40,Strawberry,Green Tea,Venti,1,65,Yakult,15,80,Cash,8:36:54
-1047,111,4/6/2026 19:04,3,Americano,Hot Coffee,Regular,1,58,Boba Pearl,10,68,Cash,19:04:49
-1048,112,4/7/2026 17:27,24,Strawberry,Green Tea,Venti,2,65,Yakult,30,160,Cash,17:27:13
-1048,113,4/7/2026 9:36,38,Biscoff Latte,Premium,Regular,1,80,Boba Pearl,10,90,Cash,9:36:22
-1049,114,4/11/2026 8:44,41,Blue Lemonade,Lemonade,Venti,2,60,None,0,120,Cash,8:44:33
-1049,115,4/11/2026 7:58,42,Americano,Hot Coffee,Regular,1,58,Nata,10,68,Cash,7:58:24
-1049,116,4/11/2026 17:47,12,Matcha,Milk Tea,Grande,1,48,Boba Pearl,10,58,Cash,17:47:14
-1049,117,4/11/2026 8:12,18,Blue Lemonade,Lemonade,Grande,1,60,None,0,60,Cash,8:12:38
+1047,110,04/06/2026 8:36,40,Strawberry,Green Tea,Venti,1,65,Yakult,15,80,Cash,8:36:54
+1047,111,04/06/2026 19:04,3,Americano,Hot Coffee,Regular,1,58,Boba Pearl,10,68,Cash,19:04:49
+1048,112,04/07/2026 17:27,24,Strawberry,Green Tea,Venti,2,65,Yakult,30,160,Cash,17:27:13
+1048,113,04/07/2026 9:36,38,Biscoff Latte,Premium,Regular,1,80,Boba Pearl,10,90,Cash,9:36:22
+1049,114,04/11/2026 8:44,41,Blue Lemonade,Lemonade,Venti,2,60,None,0,120,Cash,8:44:33
+1049,115,04/11/2026 7:58,42,Americano,Hot Coffee,Regular,1,58,Nata,10,68,Cash,7:58:24
+1049,116,04/11/2026 17:47,12,Matcha,Milk Tea,Grande,1,48,Boba Pearl,10,58,Cash,17:47:14
+1049,117,04/11/2026 8:12,18,Blue Lemonade,Lemonade,Grande,1,60,None,0,60,Cash,8:12:38
 1050,118,4/16/2026 11:16,27,Strawberry Lemon,Lemonade,Venti,1,60,None,0,60,Cash,11:16:19
-1051,119,4/6/2026 10:11,2,Matcha,Milk Tea,Grande,1,48,Nata,10,58,Cash,10:11:53
-1051,120,4/6/2026 13:44,1,Strawberry Lemon,Lemonade,Venti,1,60,None,0,60,Cash,13:44:52
+1051,119,04/06/2026 10:11,2,Matcha,Milk Tea,Grande,1,48,Nata,10,58,Cash,10:11:53
+1051,120,04/06/2026 13:44,1,Strawberry Lemon,Lemonade,Venti,1,60,None,0,60,Cash,13:44:52
 1052,121,4/15/2026 10:18,29,Nutella,Non-Coffee,Venti,1,75,None,0,75,Cash,10:18:31
 1052,122,4/15/2026 11:13,27,Iced Latte,Vietnamese Coffee,Grande,2,48,Whip Cream,20,116,Cash,11:13:12
 1053,123,3/18/2026 16:43,14,Strawberry Lemon,Lemonade,Venti,2,60,Nata,20,140,Cash,16:43:31
 1053,124,3/18/2026 9:32,35,Strawberry,Green Tea,Venti,1,65,None,0,65,Cash,9:32:06
-1054,125,4/12/2026 18:50,39,Lychee,Oolong Tea,Regular,1,55,None,0,55,Cash,18:50:35
-1054,126,4/12/2026 8:15,44,Strawberry,Green Tea,Regular,2,65,None,0,130,Cash,8:15:38
-1054,127,4/12/2026 10:20,8,Biscoff Latte,Premium,Regular,1,80,Boba Pearl,10,90,Cash,10:20:34
+1054,125,04/12/2026 18:50,39,Lychee,Oolong Tea,Regular,1,55,None,0,55,Cash,18:50:35
+1054,126,04/12/2026 8:15,44,Strawberry,Green Tea,Regular,2,65,None,0,130,Cash,8:15:38
+1054,127,04/12/2026 10:20,8,Biscoff Latte,Premium,Regular,1,80,Boba Pearl,10,90,Cash,10:20:34
 1055,128,4/13/2026 10:25,33,Green Apple,Fruit Soda,Venti,1,68,Yakult,15,83,Cash,10:25:30
 1055,129,4/13/2026 18:46,43,Blue Lemonade,Lemonade,Regular,1,60,Whip Cream,10,70,Cash,18:46:25
 1055,130,4/13/2026 8:43,43,Green Apple,Fruit Soda,Grande,2,68,Boba Pearl,20,156,Cash,8:43:56
-1056,131,4/1/2026 10:31,35,Green Apple,Fruit Soda,Grande,2,68,Boba Pearl,20,156,Cash,10:31:50
+1056,131,04/01/2026 10:31,35,Green Apple,Fruit Soda,Grande,2,68,Boba Pearl,20,156,Cash,10:31:50
 1057,132,3/26/2026 10:17,35,Matcha,Milk Tea,Regular,2,48,Whip Cream,20,116,Cash,10:17:37
 1057,133,3/26/2026 18:43,31,Cookies & Cream,Non-Coffee Frappe,Grande,2,80,Whip Cream,20,180,Cash,18:43:11
 1058,134,3/22/2026 9:22,41,Matcha,Milk Tea,Grande,1,48,Boba Pearl,10,58,Cash,9:22:14
@@ -138,12 +138,12 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1059,137,3/28/2026 15:16,38,Americano,Hot Coffee,Grande,2,58,Whip Cream,20,136,Cash,15:16:15
 1059,138,3/28/2026 9:36,44,Green Apple,Fruit Soda,Regular,1,68,None,0,68,Cash,9:36:57
 1060,139,3/19/2026 17:13,10,Caramel,Frappuccino,Grande,2,85,Yakult,30,200,Cash,17:13:06
-1061,140,4/10/2026 8:41,45,Matcha,Milk Tea,Venti,1,48,Nata,10,58,Cash,8:41:04
-1062,141,4/4/2026 16:35,40,Strawberry,Green Tea,Venti,2,65,None,0,130,Cash,16:35:13
-1062,142,4/4/2026 10:21,2,Lychee,Oolong Tea,Venti,2,55,None,0,110,Cash,10:21:13
-1063,143,4/3/2026 9:35,18,Matcha,Milk Tea,Grande,1,48,Nata,10,58,Cash,9:35:11
-1063,144,4/3/2026 17:34,47,Americano,Hot Coffee,Regular,2,58,Boba Pearl,20,136,Cash,17:34:55
-1063,145,4/3/2026 10:42,8,Blue Lemonade,Lemonade,Regular,2,60,None,0,120,Cash,10:42:18
+1061,140,04/10/2026 8:41,45,Matcha,Milk Tea,Venti,1,48,Nata,10,58,Cash,8:41:04
+1062,141,04/04/2026 16:35,40,Strawberry,Green Tea,Venti,2,65,None,0,130,Cash,16:35:13
+1062,142,04/04/2026 10:21,2,Lychee,Oolong Tea,Venti,2,55,None,0,110,Cash,10:21:13
+1063,143,04/03/2026 9:35,18,Matcha,Milk Tea,Grande,1,48,Nata,10,58,Cash,9:35:11
+1063,144,04/03/2026 17:34,47,Americano,Hot Coffee,Regular,2,58,Boba Pearl,20,136,Cash,17:34:55
+1063,145,04/03/2026 10:42,8,Blue Lemonade,Lemonade,Regular,2,60,None,0,120,Cash,10:42:18
 1064,146,3/27/2026 18:52,42,Strawberry Lemon,Lemonade,Grande,1,60,None,0,60,Cash,18:52:39
 1064,147,3/27/2026 8:32,21,Strawberry Lemon,Lemonade,Venti,1,60,Whip Cream,10,70,Cash,8:32:59
 1065,148,3/20/2026 18:48,18,Iced Latte,Vietnamese Coffee,Venti,2,48,Chia Seeds,30,126,Cash,18:48:23
@@ -170,21 +170,21 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1072,169,3/22/2026 16:22,17,Strawberry,Green Tea,Grande,2,65,None,0,130,Cash,16:22:06
 1072,170,3/22/2026 9:31,11,Matcha,Milk Tea,Regular,1,48,Boba Pearl,10,58,Cash,9:31:52
 1073,171,3/31/2026 8:48,22,Nutella,Non-Coffee,Grande,2,75,Yakult,30,180,Cash,8:48:03
-1074,172,4/7/2026 16:12,13,Strawberry Lemon,Lemonade,Regular,2,60,None,0,120,Cash,16:12:44
-1075,173,4/1/2026 17:51,48,Strawberry Lemon,Lemonade,Grande,1,60,Nata,10,70,Cash,17:51:34
-1076,174,4/9/2026 16:23,40,Green Apple,Fruit Soda,Regular,1,68,Nata,10,78,Cash,16:23:48
-1076,175,4/9/2026 9:45,11,Americano,Hot Coffee,Grande,1,58,Yakult,15,73,Cash,9:45:49
-1076,176,4/9/2026 18:11,49,Lychee,Oolong Tea,Grande,2,55,Boba Pearl,20,130,Cash,18:11:21
+1074,172,04/07/2026 16:12,13,Strawberry Lemon,Lemonade,Regular,2,60,None,0,120,Cash,16:12:44
+1075,173,04/01/2026 17:51,48,Strawberry Lemon,Lemonade,Grande,1,60,Nata,10,70,Cash,17:51:34
+1076,174,04/09/2026 16:23,40,Green Apple,Fruit Soda,Regular,1,68,Nata,10,78,Cash,16:23:48
+1076,175,04/09/2026 9:45,11,Americano,Hot Coffee,Grande,1,58,Yakult,15,73,Cash,9:45:49
+1076,176,04/09/2026 18:11,49,Lychee,Oolong Tea,Grande,2,55,Boba Pearl,20,130,Cash,18:11:21
 1077,177,3/25/2026 18:43,24,Green Apple,Fruit Soda,Venti,1,68,Chia Seeds,15,83,Cash,18:43:30
 1077,178,3/25/2026 16:28,42,Caramel,Frappuccino,Venti,1,85,Yakult,15,100,Cash,16:28:51
-1078,179,4/5/2026 10:29,8,Caramel,Frappuccino,Grande,2,85,Nata,20,190,Cash,10:29:38
-1078,180,4/5/2026 14:19,5,Lychee,Oolong Tea,Venti,1,55,Boba Pearl,10,65,Cash,14:19:46
-1078,181,4/5/2026 15:09,43,Strawberry Lemon,Lemonade,Regular,1,60,Boba Pearl,10,70,Cash,15:09:18
-1078,182,4/5/2026 16:28,2,Blue Lemonade,Lemonade,Grande,1,60,Chia Seeds,15,75,Cash,16:28:25
-1079,183,4/10/2026 18:14,1,Caramel,Frappuccino,Regular,2,85,Yakult,30,200,Cash,18:14:27
-1079,184,4/10/2026 18:03,37,Green Apple,Fruit Soda,Venti,1,68,None,0,68,Cash,18:03:13
-1080,185,4/6/2026 16:52,16,Strawberry Lemon,Lemonade,Grande,1,60,Boba Pearl,10,70,Cash,16:52:32
-1080,186,4/6/2026 18:21,43,Strawberry,Yogurt Smoothies,Grande,2,70,Yakult,30,170,Cash,18:21:20
+1078,179,04/05/2026 10:29,8,Caramel,Frappuccino,Grande,2,85,Nata,20,190,Cash,10:29:38
+1078,180,04/05/2026 14:19,5,Lychee,Oolong Tea,Venti,1,55,Boba Pearl,10,65,Cash,14:19:46
+1078,181,04/05/2026 15:09,43,Strawberry Lemon,Lemonade,Regular,1,60,Boba Pearl,10,70,Cash,15:09:18
+1078,182,04/05/2026 16:28,2,Blue Lemonade,Lemonade,Grande,1,60,Chia Seeds,15,75,Cash,16:28:25
+1079,183,04/10/2026 18:14,1,Caramel,Frappuccino,Regular,2,85,Yakult,30,200,Cash,18:14:27
+1079,184,04/10/2026 18:03,37,Green Apple,Fruit Soda,Venti,1,68,None,0,68,Cash,18:03:13
+1080,185,04/06/2026 16:52,16,Strawberry Lemon,Lemonade,Grande,1,60,Boba Pearl,10,70,Cash,16:52:32
+1080,186,04/06/2026 18:21,43,Strawberry,Yogurt Smoothies,Grande,2,70,Yakult,30,170,Cash,18:21:20
 1081,187,3/30/2026 16:30,23,Americano,Hot Coffee,Venti,2,58,None,0,116,Cash,16:30:35
 1081,188,3/30/2026 18:11,16,Green Apple,Fruit Soda,Regular,1,68,Whip Cream,10,78,Cash,18:11:51
 1082,189,4/13/2026 10:01,20,Green Apple,Fruit Soda,Venti,1,68,Yakult,15,83,Cash,10:01:37
@@ -195,44 +195,44 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1084,194,4/14/2026 10:42,36,Cookies & Cream,Non-Coffee Frappe,Venti,2,80,None,0,160,Cash,10:42:09
 1084,195,4/14/2026 16:14,12,Matcha,Milk Tea,Grande,1,48,None,0,48,Cash,16:14:02
 1084,196,4/14/2026 18:33,47,Matcha,Milk Tea,Regular,1,48,Nata,10,58,Cash,18:33:58
-1085,197,4/6/2026 17:01,39,Iced Latte,Vietnamese Coffee,Regular,1,48,Yakult,15,63,Cash,17:01:33
-1085,198,4/6/2026 7:30,18,Americano,Hot Coffee,Regular,1,58,Boba Pearl,10,68,Cash,7:30:18
-1085,199,4/6/2026 18:51,42,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,18:51:21
-1086,200,4/9/2026 10:21,26,Matcha,Milk Tea,Venti,1,48,None,0,48,Cash,10:21:46
-1086,201,4/9/2026 17:36,48,Blue Lemonade,Lemonade,Grande,2,60,None,0,120,Cash,17:36:51
-1086,202,4/9/2026 17:01,7,Lychee,Oolong Tea,Venti,1,55,None,0,55,Cash,17:01:14
+1085,197,04/06/2026 17:01,39,Iced Latte,Vietnamese Coffee,Regular,1,48,Yakult,15,63,Cash,17:01:33
+1085,198,04/06/2026 7:30,18,Americano,Hot Coffee,Regular,1,58,Boba Pearl,10,68,Cash,7:30:18
+1085,199,04/06/2026 18:51,42,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,18:51:21
+1086,200,04/09/2026 10:21,26,Matcha,Milk Tea,Venti,1,48,None,0,48,Cash,10:21:46
+1086,201,04/09/2026 17:36,48,Blue Lemonade,Lemonade,Grande,2,60,None,0,120,Cash,17:36:51
+1086,202,04/09/2026 17:01,7,Lychee,Oolong Tea,Venti,1,55,None,0,55,Cash,17:01:14
 1087,203,3/25/2026 16:30,29,Blue Lemonade,Lemonade,Grande,2,60,Chia Seeds,30,150,Cash,16:30:35
 1087,204,3/25/2026 8:31,32,Strawberry,Yogurt Smoothies,Grande,1,70,Nata,10,80,Cash,8:31:24
 1087,205,3/25/2026 17:00,26,Matcha,Milk Tea,Venti,2,48,None,0,96,Cash,17:00:16
-1088,206,4/10/2026 8:33,40,Blue Lemonade,Lemonade,Regular,1,60,Nata,10,70,Cash,8:33:32
-1088,207,4/10/2026 16:13,21,Strawberry,Yogurt Smoothies,Venti,2,70,Nata,20,160,Cash,16:13:43
-1089,208,4/2/2026 9:51,49,Strawberry,Yogurt Smoothies,Regular,2,70,Chia Seeds,30,170,Cash,9:51:35
-1089,209,4/2/2026 10:12,16,Green Apple,Fruit Soda,Grande,1,68,None,0,68,Cash,10:12:23
-1090,210,4/2/2026 10:19,17,Strawberry,Yogurt Smoothies,Venti,1,70,Yakult,15,85,Cash,10:19:28
-1090,211,4/2/2026 8:46,9,Blue Lemonade,Lemonade,Grande,1,60,None,0,60,Cash,8:46:33
+1088,206,04/10/2026 8:33,40,Blue Lemonade,Lemonade,Regular,1,60,Nata,10,70,Cash,8:33:32
+1088,207,04/10/2026 16:13,21,Strawberry,Yogurt Smoothies,Venti,2,70,Nata,20,160,Cash,16:13:43
+1089,208,04/02/2026 9:51,49,Strawberry,Yogurt Smoothies,Regular,2,70,Chia Seeds,30,170,Cash,9:51:35
+1089,209,04/02/2026 10:12,16,Green Apple,Fruit Soda,Grande,1,68,None,0,68,Cash,10:12:23
+1090,210,04/02/2026 10:19,17,Strawberry,Yogurt Smoothies,Venti,1,70,Yakult,15,85,Cash,10:19:28
+1090,211,04/02/2026 8:46,9,Blue Lemonade,Lemonade,Grande,1,60,None,0,60,Cash,8:46:33
 1091,212,4/13/2026 18:26,47,Strawberry,Yogurt Smoothies,Grande,1,70,None,0,70,Cash,18:26:03
-1092,213,4/11/2026 9:51,34,Nutella,Non-Coffee,Venti,2,75,Boba Pearl,20,170,Cash,9:51:16
-1092,214,4/11/2026 9:07,18,Strawberry Lemon,Lemonade,Grande,1,60,Nata,10,70,Cash,9:07:16
-1092,215,4/11/2026 9:48,12,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,9:48:39
-1092,216,4/11/2026 16:26,22,Matcha,Milk Tea,Grande,1,48,Yakult,15,63,Cash,16:26:57
-1093,217,4/4/2026 18:59,26,Lychee,Oolong Tea,Venti,1,55,Nata,10,65,Cash,18:59:24
-1093,218,4/4/2026 18:15,29,Strawberry,Green Tea,Grande,1,65,None,0,65,Cash,18:15:58
-1093,219,4/4/2026 9:31,9,Strawberry,Yogurt Smoothies,Regular,1,70,Boba Pearl,10,80,Cash,9:31:05
-1093,220,4/4/2026 17:23,9,Strawberry,Yogurt Smoothies,Regular,1,70,None,0,70,Cash,17:23:49
+1092,213,04/11/2026 9:51,34,Nutella,Non-Coffee,Venti,2,75,Boba Pearl,20,170,Cash,9:51:16
+1092,214,04/11/2026 9:07,18,Strawberry Lemon,Lemonade,Grande,1,60,Nata,10,70,Cash,9:07:16
+1092,215,04/11/2026 9:48,12,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,9:48:39
+1092,216,04/11/2026 16:26,22,Matcha,Milk Tea,Grande,1,48,Yakult,15,63,Cash,16:26:57
+1093,217,04/04/2026 18:59,26,Lychee,Oolong Tea,Venti,1,55,Nata,10,65,Cash,18:59:24
+1093,218,04/04/2026 18:15,29,Strawberry,Green Tea,Grande,1,65,None,0,65,Cash,18:15:58
+1093,219,04/04/2026 9:31,9,Strawberry,Yogurt Smoothies,Regular,1,70,Boba Pearl,10,80,Cash,9:31:05
+1093,220,04/04/2026 17:23,9,Strawberry,Yogurt Smoothies,Regular,1,70,None,0,70,Cash,17:23:49
 1094,221,3/24/2026 7:30,23,Nutella,Non-Coffee,Venti,1,75,Boba Pearl,10,85,Cash,7:30:40
 1094,222,3/24/2026 10:19,2,Caramel,Frappuccino,Venti,1,85,Yakult,15,100,Cash,10:19:02
 1094,223,3/24/2026 17:15,8,Strawberry,Green Tea,Venti,2,65,None,0,130,Cash,17:15:52
-1095,224,4/6/2026 16:25,18,Strawberry,Yogurt Smoothies,Grande,2,70,None,0,140,Cash,16:25:43
-1095,225,4/6/2026 9:24,6,Matcha,Milk Tea,Venti,1,48,None,0,48,Cash,9:24:46
-1096,226,4/12/2026 10:37,17,Green Apple,Fruit Soda,Regular,2,68,Whip Cream,20,156,Cash,10:37:29
-1096,227,4/12/2026 8:09,37,Cookies & Cream,Non-Coffee Frappe,Regular,1,80,None,0,80,Cash,8:09:19
-1097,228,4/10/2026 18:30,17,Cookies & Cream,Non-Coffee Frappe,Grande,2,80,None,0,160,Cash,18:30:34
+1095,224,04/06/2026 16:25,18,Strawberry,Yogurt Smoothies,Grande,2,70,None,0,140,Cash,16:25:43
+1095,225,04/06/2026 9:24,6,Matcha,Milk Tea,Venti,1,48,None,0,48,Cash,9:24:46
+1096,226,04/12/2026 10:37,17,Green Apple,Fruit Soda,Regular,2,68,Whip Cream,20,156,Cash,10:37:29
+1096,227,04/12/2026 8:09,37,Cookies & Cream,Non-Coffee Frappe,Regular,1,80,None,0,80,Cash,8:09:19
+1097,228,04/10/2026 18:30,17,Cookies & Cream,Non-Coffee Frappe,Grande,2,80,None,0,160,Cash,18:30:34
 1098,229,4/16/2026 17:51,50,Green Apple,Fruit Soda,Regular,1,68,Yakult,15,83,Cash,17:51:18
 1098,230,4/16/2026 18:43,14,Strawberry,Yogurt Smoothies,Venti,2,70,None,0,140,Cash,18:43:40
-1099,231,4/5/2026 18:12,11,Green Apple,Fruit Soda,Regular,2,68,Boba Pearl,20,156,Cash,18:12:14
-1099,232,4/5/2026 8:56,21,Strawberry Lemon,Lemonade,Venti,2,60,Nata,20,140,Cash,8:56:43
-1100,233,4/7/2026 18:57,24,Blue Lemonade,Lemonade,Grande,2,60,None,0,120,Cash,18:57:57
-1100,234,4/7/2026 10:54,28,Caramel,Frappuccino,Grande,2,85,None,0,170,Cash,10:54:57
+1099,231,04/05/2026 18:12,11,Green Apple,Fruit Soda,Regular,2,68,Boba Pearl,20,156,Cash,18:12:14
+1099,232,04/05/2026 8:56,21,Strawberry Lemon,Lemonade,Venti,2,60,Nata,20,140,Cash,8:56:43
+1100,233,04/07/2026 18:57,24,Blue Lemonade,Lemonade,Grande,2,60,None,0,120,Cash,18:57:57
+1100,234,04/07/2026 10:54,28,Caramel,Frappuccino,Grande,2,85,None,0,170,Cash,10:54:57
 1101,235,3/21/2026 8:00,34,Matcha,Milk Tea,Venti,2,48,Yakult,30,126,Cash,8:00:35
 1101,236,3/21/2026 16:05,47,Strawberry,Green Tea,Venti,2,65,Nata,20,150,Cash,16:05:42
 1101,237,3/21/2026 16:51,19,Caramel,Frappuccino,Regular,2,85,Yakult,30,200,Cash,16:51:28
@@ -240,12 +240,12 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1102,239,3/30/2026 7:56,34,Cookies & Cream,Non-Coffee Frappe,Regular,2,80,None,0,160,Cash,7:56:47
 1103,240,4/15/2026 18:21,24,Green Apple,Fruit Soda,Venti,1,68,Boba Pearl,10,78,Cash,18:21:53
 1103,241,4/15/2026 18:08,20,Nutella,Non-Coffee,Venti,2,75,None,0,150,Cash,18:08:02
-1104,242,4/7/2026 10:29,40,Caramel,Frappuccino,Grande,1,85,Yakult,15,100,Cash,10:29:30
-1104,243,4/7/2026 10:06,45,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,10:06:16
-1104,244,4/7/2026 9:44,4,Cookies & Cream,Non-Coffee Frappe,Grande,2,80,Boba Pearl,20,180,Cash,9:44:30
-1105,245,4/7/2026 12:53,3,Caramel,Frappuccino,Venti,2,85,None,0,170,Cash,12:53:25
-1105,246,4/7/2026 17:42,45,Lychee,Oolong Tea,Grande,2,55,Whip Cream,20,130,Cash,17:42:02
-1105,247,4/7/2026 17:20,8,Strawberry,Yogurt Smoothies,Grande,1,70,None,0,70,Cash,17:20:22
+1104,242,04/07/2026 10:29,40,Caramel,Frappuccino,Grande,1,85,Yakult,15,100,Cash,10:29:30
+1104,243,04/07/2026 10:06,45,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,10:06:16
+1104,244,04/07/2026 9:44,4,Cookies & Cream,Non-Coffee Frappe,Grande,2,80,Boba Pearl,20,180,Cash,9:44:30
+1105,245,04/07/2026 12:53,3,Caramel,Frappuccino,Venti,2,85,None,0,170,Cash,12:53:25
+1105,246,04/07/2026 17:42,45,Lychee,Oolong Tea,Grande,2,55,Whip Cream,20,130,Cash,17:42:02
+1105,247,04/07/2026 17:20,8,Strawberry,Yogurt Smoothies,Grande,1,70,None,0,70,Cash,17:20:22
 1106,248,4/15/2026 15:22,29,Green Apple,Fruit Soda,Grande,1,68,None,0,68,Cash,15:22:09
 1106,249,4/15/2026 10:35,16,Iced Latte,Vietnamese Coffee,Grande,1,48,Nata,10,58,Cash,10:35:23
 1106,250,4/15/2026 8:04,4,Green Apple,Fruit Soda,Grande,1,68,None,0,68,Cash,8:04:05
@@ -255,65 +255,65 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1108,254,4/15/2026 18:51,33,Strawberry,Green Tea,Regular,1,65,Yakult,15,80,Cash,18:51:37
 1108,255,4/15/2026 16:50,17,Matcha,Milk Tea,Regular,1,48,Yakult,15,63,Cash,16:50:30
 1108,256,4/15/2026 8:00,10,Caramel,Frappuccino,Regular,1,85,Nata,10,95,Cash,8:00:55
-1109,257,4/1/2026 17:58,10,Lychee,Oolong Tea,Grande,2,55,Chia Seeds,30,140,Cash,17:58:34
-1109,258,4/1/2026 17:04,16,Matcha,Milk Tea,Regular,2,48,Yakult,30,126,Cash,17:04:28
+1109,257,04/01/2026 17:58,10,Lychee,Oolong Tea,Grande,2,55,Chia Seeds,30,140,Cash,17:58:34
+1109,258,04/01/2026 17:04,16,Matcha,Milk Tea,Regular,2,48,Yakult,30,126,Cash,17:04:28
 1110,259,3/23/2026 16:41,19,Nutella,Non-Coffee,Regular,1,75,Nata,10,85,Cash,16:41:06
-1111,260,4/5/2026 9:46,8,Strawberry,Yogurt Smoothies,Venti,2,70,None,0,140,Cash,9:46:12
-1111,261,4/5/2026 14:48,23,Blue Lemonade,Lemonade,Venti,2,60,Boba Pearl,20,140,Cash,14:48:01
-1111,262,4/5/2026 8:51,37,Green Apple,Fruit Soda,Regular,1,68,Nata,10,78,Cash,8:51:10
-1111,263,4/5/2026 9:31,36,Matcha,Milk Tea,Grande,2,48,None,0,96,Cash,9:31:05
-1112,264,4/1/2026 17:21,9,Matcha,Milk Tea,Venti,1,48,None,0,48,Cash,17:21:51
-1113,265,4/12/2026 8:34,10,Blue Lemonade,Lemonade,Grande,1,60,Yakult,15,75,Cash,8:34:08
-1113,266,4/12/2026 10:43,48,Matcha,Milk Tea,Grande,1,48,None,0,48,Cash,10:43:39
-1113,267,4/12/2026 17:39,47,Americano,Hot Coffee,Grande,1,58,Nata,10,68,Cash,17:39:20
-1113,268,4/12/2026 18:27,50,Strawberry Lemon,Lemonade,Grande,1,60,Boba Pearl,10,70,Cash,18:27:19
+1111,260,04/05/2026 9:46,8,Strawberry,Yogurt Smoothies,Venti,2,70,None,0,140,Cash,9:46:12
+1111,261,04/05/2026 14:48,23,Blue Lemonade,Lemonade,Venti,2,60,Boba Pearl,20,140,Cash,14:48:01
+1111,262,04/05/2026 8:51,37,Green Apple,Fruit Soda,Regular,1,68,Nata,10,78,Cash,8:51:10
+1111,263,04/05/2026 9:31,36,Matcha,Milk Tea,Grande,2,48,None,0,96,Cash,9:31:05
+1112,264,04/01/2026 17:21,9,Matcha,Milk Tea,Venti,1,48,None,0,48,Cash,17:21:51
+1113,265,04/12/2026 8:34,10,Blue Lemonade,Lemonade,Grande,1,60,Yakult,15,75,Cash,8:34:08
+1113,266,04/12/2026 10:43,48,Matcha,Milk Tea,Grande,1,48,None,0,48,Cash,10:43:39
+1113,267,04/12/2026 17:39,47,Americano,Hot Coffee,Grande,1,58,Nata,10,68,Cash,17:39:20
+1113,268,04/12/2026 18:27,50,Strawberry Lemon,Lemonade,Grande,1,60,Boba Pearl,10,70,Cash,18:27:19
 1114,269,3/25/2026 9:41,31,Americano,Hot Coffee,Venti,2,58,Boba Pearl,20,136,Cash,9:41:46
 1114,270,3/25/2026 9:44,35,Strawberry Lemon,Lemonade,Venti,1,60,Whip Cream,10,70,Cash,9:44:22
 1114,271,3/25/2026 10:04,1,Caramel,Frappuccino,Venti,2,85,Yakult,30,200,Cash,10:04:27
 1115,272,3/25/2026 17:27,3,Caramel,Frappuccino,Venti,2,85,None,0,170,Cash,17:27:55
 1115,273,3/25/2026 9:15,32,Nutella,Non-Coffee,Grande,1,75,Yakult,15,90,Cash,9:15:30
 1115,274,3/25/2026 10:08,12,Caramel,Frappuccino,Venti,1,85,Nata,10,95,Cash,10:08:56
-1116,275,4/11/2026 8:45,23,Iced Latte,Vietnamese Coffee,Grande,1,48,Yakult,15,63,Cash,8:45:22
-1116,276,4/11/2026 8:36,9,Nutella,Non-Coffee,Grande,1,75,None,0,75,Cash,8:36:31
-1116,277,4/11/2026 17:33,17,Caramel,Frappuccino,Regular,1,85,Whip Cream,10,95,Cash,17:33:21
+1116,275,04/11/2026 8:45,23,Iced Latte,Vietnamese Coffee,Grande,1,48,Yakult,15,63,Cash,8:45:22
+1116,276,04/11/2026 8:36,9,Nutella,Non-Coffee,Grande,1,75,None,0,75,Cash,8:36:31
+1116,277,04/11/2026 17:33,17,Caramel,Frappuccino,Regular,1,85,Whip Cream,10,95,Cash,17:33:21
 1117,278,3/28/2026 16:13,10,Matcha,Milk Tea,Grande,2,48,None,0,96,Cash,16:13:28
 1117,279,3/28/2026 10:00,26,Strawberry,Yogurt Smoothies,Regular,2,70,Whip Cream,20,160,Cash,10:00:36
 1117,280,3/28/2026 11:44,17,Caramel,Frappuccino,Regular,1,85,Whip Cream,10,95,Cash,11:44:58
-1118,281,4/7/2026 9:12,45,Matcha,Milk Tea,Grande,2,48,Nata,20,116,Cash,9:12:43
-1118,282,4/7/2026 10:30,22,Lychee,Oolong Tea,Regular,2,55,Boba Pearl,20,130,Cash,10:30:13
-1118,283,4/7/2026 8:51,24,Strawberry Lemon,Lemonade,Grande,1,60,Nata,10,70,Cash,8:51:14
+1118,281,04/07/2026 9:12,45,Matcha,Milk Tea,Grande,2,48,Nata,20,116,Cash,9:12:43
+1118,282,04/07/2026 10:30,22,Lychee,Oolong Tea,Regular,2,55,Boba Pearl,20,130,Cash,10:30:13
+1118,283,04/07/2026 8:51,24,Strawberry Lemon,Lemonade,Grande,1,60,Nata,10,70,Cash,8:51:14
 1119,284,3/25/2026 18:58,50,Lychee,Oolong Tea,Grande,1,55,Yakult,15,70,Cash,18:58:11
 1119,285,3/25/2026 18:18,42,Strawberry,Green Tea,Venti,1,65,Boba Pearl,10,75,Cash,18:18:23
-1120,286,4/6/2026 17:12,29,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,17:12:40
-1120,287,4/6/2026 10:39,26,Matcha,Milk Tea,Grande,1,48,None,0,48,Cash,10:39:12
-1121,288,4/4/2026 16:51,50,Iced Latte,Vietnamese Coffee,Venti,1,48,Boba Pearl,10,58,Cash,16:51:56
-1121,289,4/4/2026 8:10,46,Strawberry,Green Tea,Venti,2,65,Nata,20,150,Cash,8:10:40
-1121,290,4/4/2026 13:41,1,Iced Latte,Vietnamese Coffee,Regular,2,48,Boba Pearl,20,116,Cash,13:41:06
+1120,286,04/06/2026 17:12,29,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,17:12:40
+1120,287,04/06/2026 10:39,26,Matcha,Milk Tea,Grande,1,48,None,0,48,Cash,10:39:12
+1121,288,04/04/2026 16:51,50,Iced Latte,Vietnamese Coffee,Venti,1,48,Boba Pearl,10,58,Cash,16:51:56
+1121,289,04/04/2026 8:10,46,Strawberry,Green Tea,Venti,2,65,Nata,20,150,Cash,8:10:40
+1121,290,04/04/2026 13:41,1,Iced Latte,Vietnamese Coffee,Regular,2,48,Boba Pearl,20,116,Cash,13:41:06
 1122,291,4/16/2026 15:09,48,Nutella,Non-Coffee,Grande,2,75,Boba Pearl,20,170,Cash,15:09:44
-1123,292,4/7/2026 9:03,24,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,9:03:58
-1124,293,4/2/2026 14:56,50,Blue Lemonade,Lemonade,Venti,1,60,Nata,10,70,Cash,14:56:27
-1124,294,4/2/2026 9:12,35,Biscoff Latte,Premium,Grande,1,80,Chia Seeds,15,95,Cash,9:12:59
-1124,295,4/2/2026 17:39,45,Green Apple,Fruit Soda,Grande,1,68,None,0,68,Cash,17:39:26
-1125,296,4/3/2026 8:19,2,Cookies & Cream,Non-Coffee Frappe,Regular,2,80,Nata,20,180,Cash,8:19:13
-1125,297,4/3/2026 18:25,6,Americano,Hot Coffee,Grande,2,58,Nata,20,136,Cash,18:25:29
-1126,298,4/6/2026 18:18,27,Cookies & Cream,Non-Coffee Frappe,Regular,1,80,Boba Pearl,10,90,Cash,18:18:28
-1126,299,4/6/2026 10:05,26,Nutella,Non-Coffee,Grande,1,75,Chia Seeds,15,90,Cash,10:05:48
+1123,292,04/07/2026 9:03,24,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,9:03:58
+1124,293,04/02/2026 14:56,50,Blue Lemonade,Lemonade,Venti,1,60,Nata,10,70,Cash,14:56:27
+1124,294,04/02/2026 9:12,35,Biscoff Latte,Premium,Grande,1,80,Chia Seeds,15,95,Cash,9:12:59
+1124,295,04/02/2026 17:39,45,Green Apple,Fruit Soda,Grande,1,68,None,0,68,Cash,17:39:26
+1125,296,04/03/2026 8:19,2,Cookies & Cream,Non-Coffee Frappe,Regular,2,80,Nata,20,180,Cash,8:19:13
+1125,297,04/03/2026 18:25,6,Americano,Hot Coffee,Grande,2,58,Nata,20,136,Cash,18:25:29
+1126,298,04/06/2026 18:18,27,Cookies & Cream,Non-Coffee Frappe,Regular,1,80,Boba Pearl,10,90,Cash,18:18:28
+1126,299,04/06/2026 10:05,26,Nutella,Non-Coffee,Grande,1,75,Chia Seeds,15,90,Cash,10:05:48
 1127,300,4/13/2026 9:57,25,Green Apple,Fruit Soda,Regular,1,68,Yakult,15,83,Cash,9:57:40
 1128,301,4/16/2026 10:14,20,Strawberry,Yogurt Smoothies,Venti,1,70,Chia Seeds,15,85,Cash,10:14:30
 1129,302,4/13/2026 11:35,2,Strawberry Lemon,Lemonade,Grande,1,60,Chia Seeds,15,75,Cash,11:35:51
-1130,303,4/9/2026 18:48,39,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,18:48:45
-1130,304,4/9/2026 16:20,47,Iced Latte,Vietnamese Coffee,Venti,1,48,Yakult,15,63,Cash,16:20:37
-1130,305,4/9/2026 19:18,42,Green Apple,Fruit Soda,Grande,1,68,Boba Pearl,10,78,Cash,19:18:48
-1131,306,4/8/2026 17:53,46,Iced Latte,Vietnamese Coffee,Venti,1,48,None,0,48,Cash,17:53:29
-1131,307,4/8/2026 16:27,31,Nutella,Non-Coffee,Grande,2,75,None,0,150,Cash,16:27:21
+1130,303,04/09/2026 18:48,39,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,18:48:45
+1130,304,04/09/2026 16:20,47,Iced Latte,Vietnamese Coffee,Venti,1,48,Yakult,15,63,Cash,16:20:37
+1130,305,04/09/2026 19:18,42,Green Apple,Fruit Soda,Grande,1,68,Boba Pearl,10,78,Cash,19:18:48
+1131,306,04/08/2026 17:53,46,Iced Latte,Vietnamese Coffee,Venti,1,48,None,0,48,Cash,17:53:29
+1131,307,04/08/2026 16:27,31,Nutella,Non-Coffee,Grande,2,75,None,0,150,Cash,16:27:21
 1132,308,3/31/2026 8:03,5,Americano,Hot Coffee,Venti,1,58,Yakult,15,73,Cash,8:03:22
 1132,309,3/31/2026 8:22,6,Strawberry,Green Tea,Regular,1,65,Nata,10,75,Cash,8:22:05
 1133,310,3/24/2026 16:12,42,Americano,Hot Coffee,Grande,1,58,Whip Cream,10,68,Cash,16:12:53
-1134,311,4/3/2026 18:47,9,Matcha,Milk Tea,Regular,2,48,Whip Cream,20,116,Cash,18:47:08
-1134,312,4/3/2026 19:30,41,Matcha,Milk Tea,Regular,1,48,None,0,48,Cash,19:30:14
-1134,313,4/3/2026 10:35,29,Strawberry Lemon,Lemonade,Regular,2,60,Nata,20,140,Cash,10:35:08
-1135,314,4/8/2026 9:38,10,Caramel,Frappuccino,Grande,2,85,Whip Cream,20,190,Cash,9:38:14
-1135,315,4/8/2026 10:00,22,Iced Latte,Vietnamese Coffee,Grande,2,48,Yakult,30,126,Cash,10:00:55
+1134,311,04/03/2026 18:47,9,Matcha,Milk Tea,Regular,2,48,Whip Cream,20,116,Cash,18:47:08
+1134,312,04/03/2026 19:30,41,Matcha,Milk Tea,Regular,1,48,None,0,48,Cash,19:30:14
+1134,313,04/03/2026 10:35,29,Strawberry Lemon,Lemonade,Regular,2,60,Nata,20,140,Cash,10:35:08
+1135,314,04/08/2026 9:38,10,Caramel,Frappuccino,Grande,2,85,Whip Cream,20,190,Cash,9:38:14
+1135,315,04/08/2026 10:00,22,Iced Latte,Vietnamese Coffee,Grande,2,48,Yakult,30,126,Cash,10:00:55
 1136,316,4/14/2026 17:51,16,Matcha,Milk Tea,Grande,1,48,Yakult,15,63,Cash,17:51:21
 1136,317,4/14/2026 18:08,16,Matcha,Milk Tea,Regular,2,48,None,0,96,Cash,18:08:26
 1136,318,4/14/2026 17:52,12,Matcha,Milk Tea,Grande,2,48,Boba Pearl,20,116,Cash,17:52:23
@@ -331,66 +331,66 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1140,330,4/13/2026 19:26,45,Blue Lemonade,Lemonade,Regular,1,60,Nata,10,70,Cash,19:26:16
 1141,331,3/21/2026 9:00,7,Lychee,Oolong Tea,Grande,1,55,None,0,55,Cash,9:00:15
 1141,332,3/21/2026 18:09,29,Lychee,Oolong Tea,Venti,2,55,Whip Cream,20,130,Cash,18:09:46
-1142,333,4/12/2026 17:23,22,Lychee,Oolong Tea,Regular,1,55,None,0,55,Cash,17:23:32
-1142,334,4/12/2026 9:47,24,Strawberry Lemon,Lemonade,Grande,1,60,None,0,60,Cash,9:47:55
-1142,335,4/12/2026 16:20,40,Biscoff Latte,Premium,Regular,2,80,Boba Pearl,20,180,Cash,16:20:48
+1142,333,04/12/2026 17:23,22,Lychee,Oolong Tea,Regular,1,55,None,0,55,Cash,17:23:32
+1142,334,04/12/2026 9:47,24,Strawberry Lemon,Lemonade,Grande,1,60,None,0,60,Cash,9:47:55
+1142,335,04/12/2026 16:20,40,Biscoff Latte,Premium,Regular,2,80,Boba Pearl,20,180,Cash,16:20:48
 1143,336,3/18/2026 10:59,15,Lychee,Oolong Tea,Regular,2,55,None,0,110,Cash,10:59:02
 1143,337,3/18/2026 8:33,6,Strawberry,Green Tea,Grande,2,65,None,0,130,Cash,8:33:49
 1144,338,3/29/2026 16:23,22,Blue Lemonade,Lemonade,Grande,1,60,None,0,60,Cash,16:23:42
 1144,339,3/29/2026 9:02,49,Iced Latte,Vietnamese Coffee,Grande,1,48,Boba Pearl,10,58,Cash,9:02:34
 1144,340,3/29/2026 18:26,48,Nutella,Non-Coffee,Regular,2,75,None,0,150,Cash,18:26:10
 1144,341,3/29/2026 18:31,30,Blue Lemonade,Lemonade,Grande,1,60,Whip Cream,10,70,Cash,18:31:29
-1145,342,4/11/2026 16:04,14,Nutella,Non-Coffee,Regular,1,75,Boba Pearl,10,85,Cash,16:04:09
-1145,343,4/11/2026 9:35,44,Blue Lemonade,Lemonade,Venti,1,60,Whip Cream,10,70,Cash,9:35:01
+1145,342,04/11/2026 16:04,14,Nutella,Non-Coffee,Regular,1,75,Boba Pearl,10,85,Cash,16:04:09
+1145,343,04/11/2026 9:35,44,Blue Lemonade,Lemonade,Venti,1,60,Whip Cream,10,70,Cash,9:35:01
 1146,344,4/14/2026 17:41,3,Strawberry Lemon,Lemonade,Venti,2,60,Yakult,30,150,Cash,17:41:54
 1146,345,4/14/2026 17:52,19,Blue Lemonade,Lemonade,Regular,1,60,None,0,60,Cash,17:52:03
 1146,346,4/14/2026 19:27,43,Lychee,Oolong Tea,Venti,2,55,None,0,110,Cash,19:27:24
 1147,347,3/24/2026 9:25,28,Strawberry Lemon,Lemonade,Regular,2,60,Yakult,30,150,Cash,9:25:37
 1147,348,3/24/2026 8:35,5,Nutella,Non-Coffee,Regular,1,75,Boba Pearl,10,85,Cash,8:35:25
 1147,349,3/24/2026 16:03,28,Strawberry Lemon,Lemonade,Regular,2,60,None,0,120,Cash,16:03:13
-1148,350,4/10/2026 10:08,20,Nutella,Non-Coffee,Regular,2,75,Chia Seeds,30,180,Cash,10:08:03
-1148,351,4/10/2026 17:34,27,Caramel,Frappuccino,Grande,1,85,None,0,85,Cash,17:34:32
-1148,352,4/10/2026 8:14,14,Strawberry Lemon,Lemonade,Venti,2,60,Whip Cream,20,140,Cash,8:14:56
-1149,353,4/11/2026 10:10,32,Strawberry,Yogurt Smoothies,Grande,2,70,None,0,140,Cash,10:10:31
-1149,354,4/11/2026 8:13,7,Cookies & Cream,Non-Coffee Frappe,Regular,2,80,Chia Seeds,30,190,Cash,8:13:14
-1149,355,4/11/2026 9:19,21,Strawberry Lemon,Lemonade,Regular,2,60,None,0,120,Cash,9:19:25
+1148,350,04/10/2026 10:08,20,Nutella,Non-Coffee,Regular,2,75,Chia Seeds,30,180,Cash,10:08:03
+1148,351,04/10/2026 17:34,27,Caramel,Frappuccino,Grande,1,85,None,0,85,Cash,17:34:32
+1148,352,04/10/2026 8:14,14,Strawberry Lemon,Lemonade,Venti,2,60,Whip Cream,20,140,Cash,8:14:56
+1149,353,04/11/2026 10:10,32,Strawberry,Yogurt Smoothies,Grande,2,70,None,0,140,Cash,10:10:31
+1149,354,04/11/2026 8:13,7,Cookies & Cream,Non-Coffee Frappe,Regular,2,80,Chia Seeds,30,190,Cash,8:13:14
+1149,355,04/11/2026 9:19,21,Strawberry Lemon,Lemonade,Regular,2,60,None,0,120,Cash,9:19:25
 1150,356,3/24/2026 8:51,44,Blue Lemonade,Lemonade,Regular,1,60,Yakult,15,75,Cash,8:51:31
 1151,357,3/29/2026 9:28,8,Matcha,Milk Tea,Grande,2,48,Boba Pearl,20,116,Cash,9:28:42
 1151,358,3/29/2026 8:18,22,Green Apple,Fruit Soda,Venti,1,68,Boba Pearl,10,78,Cash,8:18:13
 1151,359,3/29/2026 8:02,28,Green Apple,Fruit Soda,Grande,2,68,Yakult,30,166,Cash,8:02:40
-1152,360,4/12/2026 11:37,10,Strawberry Lemon,Lemonade,Grande,1,60,Boba Pearl,10,70,Cash,11:37:12
-1152,361,4/12/2026 12:41,13,Iced Latte,Vietnamese Coffee,Regular,2,48,None,0,96,Cash,12:41:03
-1152,362,4/12/2026 17:53,5,Blue Lemonade,Lemonade,Regular,2,60,None,0,120,Cash,17:53:26
-1152,363,4/12/2026 8:02,39,Strawberry Lemon,Lemonade,Venti,1,60,Nata,10,70,Cash,8:02:53
+1152,360,04/12/2026 11:37,10,Strawberry Lemon,Lemonade,Grande,1,60,Boba Pearl,10,70,Cash,11:37:12
+1152,361,04/12/2026 12:41,13,Iced Latte,Vietnamese Coffee,Regular,2,48,None,0,96,Cash,12:41:03
+1152,362,04/12/2026 17:53,5,Blue Lemonade,Lemonade,Regular,2,60,None,0,120,Cash,17:53:26
+1152,363,04/12/2026 8:02,39,Strawberry Lemon,Lemonade,Venti,1,60,Nata,10,70,Cash,8:02:53
 1153,364,3/29/2026 8:14,37,Strawberry,Yogurt Smoothies,Venti,2,70,Whip Cream,20,160,Cash,8:14:57
 1153,365,3/29/2026 8:22,18,Blue Lemonade,Lemonade,Venti,1,60,None,0,60,Cash,8:22:22
 1153,366,3/29/2026 9:57,19,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,9:57:25
 1153,367,3/29/2026 17:53,17,Blue Lemonade,Lemonade,Grande,1,60,None,0,60,Cash,17:53:36
-1154,368,4/6/2026 17:02,16,Iced Latte,Vietnamese Coffee,Venti,1,48,None,0,48,Cash,17:02:03
-1154,369,4/6/2026 10:19,10,Strawberry,Green Tea,Grande,1,65,None,0,65,Cash,10:19:56
-1154,370,4/6/2026 8:09,49,Green Apple,Fruit Soda,Venti,1,68,Boba Pearl,10,78,Cash,8:09:26
-1155,371,4/10/2026 18:00,36,Matcha,Milk Tea,Venti,1,48,Yakult,15,63,Cash,18:00:08
-1155,372,4/10/2026 18:25,40,Matcha,Milk Tea,Venti,2,48,Boba Pearl,20,116,Cash,18:25:34
-1155,373,4/10/2026 9:52,18,Strawberry Lemon,Lemonade,Venti,2,60,None,0,120,Cash,9:52:28
+1154,368,04/06/2026 17:02,16,Iced Latte,Vietnamese Coffee,Venti,1,48,None,0,48,Cash,17:02:03
+1154,369,04/06/2026 10:19,10,Strawberry,Green Tea,Grande,1,65,None,0,65,Cash,10:19:56
+1154,370,04/06/2026 8:09,49,Green Apple,Fruit Soda,Venti,1,68,Boba Pearl,10,78,Cash,8:09:26
+1155,371,04/10/2026 18:00,36,Matcha,Milk Tea,Venti,1,48,Yakult,15,63,Cash,18:00:08
+1155,372,04/10/2026 18:25,40,Matcha,Milk Tea,Venti,2,48,Boba Pearl,20,116,Cash,18:25:34
+1155,373,04/10/2026 9:52,18,Strawberry Lemon,Lemonade,Venti,2,60,None,0,120,Cash,9:52:28
 1156,374,3/27/2026 17:37,45,Strawberry Lemon,Lemonade,Grande,1,60,Boba Pearl,10,70,Cash,17:37:01
-1157,375,4/11/2026 17:13,42,Iced Latte,Vietnamese Coffee,Regular,2,48,Yakult,30,126,Cash,17:13:58
-1157,376,4/11/2026 10:05,15,Strawberry,Green Tea,Venti,1,65,Yakult,15,80,Cash,10:05:27
-1157,377,4/11/2026 17:15,11,Americano,Hot Coffee,Regular,2,58,Yakult,30,146,Cash,17:15:19
-1158,378,4/3/2026 14:43,28,Matcha,Milk Tea,Regular,1,48,None,0,48,Cash,14:43:19
-1158,379,4/3/2026 11:35,40,Caramel,Frappuccino,Grande,1,85,Whip Cream,10,95,Cash,11:35:26
-1159,380,4/1/2026 16:21,27,Americano,Hot Coffee,Grande,2,58,Yakult,30,146,Cash,16:21:47
+1157,375,04/11/2026 17:13,42,Iced Latte,Vietnamese Coffee,Regular,2,48,Yakult,30,126,Cash,17:13:58
+1157,376,04/11/2026 10:05,15,Strawberry,Green Tea,Venti,1,65,Yakult,15,80,Cash,10:05:27
+1157,377,04/11/2026 17:15,11,Americano,Hot Coffee,Regular,2,58,Yakult,30,146,Cash,17:15:19
+1158,378,04/03/2026 14:43,28,Matcha,Milk Tea,Regular,1,48,None,0,48,Cash,14:43:19
+1158,379,04/03/2026 11:35,40,Caramel,Frappuccino,Grande,1,85,Whip Cream,10,95,Cash,11:35:26
+1159,380,04/01/2026 16:21,27,Americano,Hot Coffee,Grande,2,58,Yakult,30,146,Cash,16:21:47
 1160,381,3/20/2026 9:33,26,Lychee,Oolong Tea,Grande,1,55,Chia Seeds,15,70,Cash,9:33:26
-1161,382,4/3/2026 10:21,43,Blue Lemonade,Lemonade,Venti,2,60,Nata,20,140,Cash,10:21:16
-1161,383,4/3/2026 18:54,27,Matcha,Milk Tea,Venti,2,48,Yakult,30,126,Cash,18:54:48
+1161,382,04/03/2026 10:21,43,Blue Lemonade,Lemonade,Venti,2,60,Nata,20,140,Cash,10:21:16
+1161,383,04/03/2026 18:54,27,Matcha,Milk Tea,Venti,2,48,Yakult,30,126,Cash,18:54:48
 1162,384,3/19/2026 16:37,6,Matcha,Milk Tea,Venti,2,48,Boba Pearl,20,116,Cash,16:37:16
 1162,385,3/19/2026 14:32,8,Strawberry Lemon,Lemonade,Regular,1,60,Boba Pearl,10,70,Cash,14:32:10
-1163,386,4/9/2026 18:17,29,Blue Lemonade,Lemonade,Regular,1,60,None,0,60,Cash,18:17:13
-1164,387,4/12/2026 17:50,13,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,17:50:58
-1164,388,4/12/2026 16:19,27,Caramel,Frappuccino,Venti,1,85,None,0,85,Cash,16:19:48
-1164,389,4/12/2026 10:55,34,Strawberry Lemon,Lemonade,Grande,2,60,Whip Cream,20,140,Cash,10:55:53
-1164,390,4/12/2026 10:23,37,Blue Lemonade,Lemonade,Venti,1,60,None,0,60,Cash,10:23:12
-1165,391,4/6/2026 10:33,30,Green Apple,Fruit Soda,Venti,1,68,Chia Seeds,15,83,Cash,10:33:49
-1166,392,4/8/2026 17:30,28,Cookies & Cream,Non-Coffee Frappe,Venti,1,80,Yakult,15,95,Cash,17:30:38
+1163,386,04/09/2026 18:17,29,Blue Lemonade,Lemonade,Regular,1,60,None,0,60,Cash,18:17:13
+1164,387,04/12/2026 17:50,13,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,17:50:58
+1164,388,04/12/2026 16:19,27,Caramel,Frappuccino,Venti,1,85,None,0,85,Cash,16:19:48
+1164,389,04/12/2026 10:55,34,Strawberry Lemon,Lemonade,Grande,2,60,Whip Cream,20,140,Cash,10:55:53
+1164,390,04/12/2026 10:23,37,Blue Lemonade,Lemonade,Venti,1,60,None,0,60,Cash,10:23:12
+1165,391,04/06/2026 10:33,30,Green Apple,Fruit Soda,Venti,1,68,Chia Seeds,15,83,Cash,10:33:49
+1166,392,04/08/2026 17:30,28,Cookies & Cream,Non-Coffee Frappe,Venti,1,80,Yakult,15,95,Cash,17:30:38
 1167,393,3/20/2026 9:54,22,Lychee,Oolong Tea,Regular,1,55,Yakult,15,70,Cash,9:54:43
 1168,394,3/29/2026 8:03,9,Strawberry Lemon,Lemonade,Regular,1,60,None,0,60,Cash,8:03:01
 1168,395,3/29/2026 10:39,7,Strawberry Lemon,Lemonade,Grande,2,60,None,0,120,Cash,10:39:35
@@ -403,8 +403,8 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1170,402,4/13/2026 8:56,1,Blue Lemonade,Lemonade,Venti,2,60,Yakult,30,150,Cash,8:56:03
 1171,403,3/28/2026 8:11,35,Strawberry,Yogurt Smoothies,Grande,2,70,Boba Pearl,20,160,Cash,8:11:16
 1171,404,3/28/2026 16:44,47,Americano,Hot Coffee,Venti,2,58,None,0,116,Cash,16:44:12
-1172,405,4/6/2026 8:55,12,Matcha,Milk Tea,Grande,1,48,None,0,48,Cash,8:55:50
-1172,406,4/6/2026 9:07,24,Caramel,Frappuccino,Regular,1,85,None,0,85,Cash,9:07:06
+1172,405,04/06/2026 8:55,12,Matcha,Milk Tea,Grande,1,48,None,0,48,Cash,8:55:50
+1172,406,04/06/2026 9:07,24,Caramel,Frappuccino,Regular,1,85,None,0,85,Cash,9:07:06
 1173,407,3/27/2026 8:57,35,Matcha,Milk Tea,Grande,2,48,Nata,20,116,Cash,8:57:16
 1173,408,3/27/2026 18:49,1,Blue Lemonade,Lemonade,Regular,2,60,None,0,120,Cash,18:49:08
 1173,409,3/27/2026 8:37,20,Blue Lemonade,Lemonade,Grande,2,60,None,0,120,Cash,8:37:55
@@ -420,10 +420,10 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1177,419,3/29/2026 16:58,28,Strawberry Lemon,Lemonade,Grande,1,60,Nata,10,70,Cash,16:58:03
 1177,420,3/29/2026 17:35,1,Strawberry Lemon,Lemonade,Regular,2,60,Yakult,30,150,Cash,17:35:50
 1177,421,3/29/2026 9:21,6,Caramel,Frappuccino,Regular,2,85,Boba Pearl,20,190,Cash,9:21:10
-1178,422,4/12/2026 9:39,46,Blue Lemonade,Lemonade,Regular,1,60,Boba Pearl,10,70,Cash,9:39:01
-1178,423,4/12/2026 16:52,20,Americano,Hot Coffee,Venti,2,58,Whip Cream,20,136,Cash,16:52:20
-1178,424,4/12/2026 18:08,46,Strawberry Lemon,Lemonade,Venti,1,60,None,0,60,Cash,18:08:15
-1178,425,4/12/2026 9:52,17,Americano,Hot Coffee,Regular,2,58,Whip Cream,20,136,Cash,9:52:35
+1178,422,04/12/2026 9:39,46,Blue Lemonade,Lemonade,Regular,1,60,Boba Pearl,10,70,Cash,9:39:01
+1178,423,04/12/2026 16:52,20,Americano,Hot Coffee,Venti,2,58,Whip Cream,20,136,Cash,16:52:20
+1178,424,04/12/2026 18:08,46,Strawberry Lemon,Lemonade,Venti,1,60,None,0,60,Cash,18:08:15
+1178,425,04/12/2026 9:52,17,Americano,Hot Coffee,Regular,2,58,Whip Cream,20,136,Cash,9:52:35
 1179,426,3/25/2026 9:27,11,Strawberry Lemon,Lemonade,Venti,1,60,Yakult,15,75,Cash,9:27:04
 1179,427,3/25/2026 17:40,11,Americano,Hot Coffee,Regular,2,58,Nata,20,136,Cash,17:40:36
 1180,428,3/26/2026 9:44,1,Strawberry Lemon,Lemonade,Regular,2,60,Chia Seeds,30,150,Cash,9:44:53
@@ -436,20 +436,20 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1184,435,3/27/2026 17:30,46,Blue Lemonade,Lemonade,Regular,1,60,None,0,60,Cash,17:30:07
 1184,436,3/27/2026 8:01,43,Blue Lemonade,Lemonade,Regular,2,60,Boba Pearl,20,140,Cash,8:01:35
 1185,437,4/13/2026 17:41,1,Lychee,Oolong Tea,Regular,1,55,Yakult,15,70,Cash,17:41:12
-1186,438,4/5/2026 9:40,45,Biscoff Latte,Premium,Venti,1,80,None,0,80,Cash,9:40:14
-1186,439,4/5/2026 8:44,3,Strawberry Lemon,Lemonade,Regular,1,60,Boba Pearl,10,70,Cash,8:44:30
-1186,440,4/5/2026 9:10,40,Matcha,Milk Tea,Regular,2,48,Whip Cream,20,116,Cash,9:10:52
-1186,441,4/5/2026 9:14,40,Strawberry,Green Tea,Regular,1,65,Nata,10,75,Cash,9:14:08
+1186,438,04/05/2026 9:40,45,Biscoff Latte,Premium,Venti,1,80,None,0,80,Cash,9:40:14
+1186,439,04/05/2026 8:44,3,Strawberry Lemon,Lemonade,Regular,1,60,Boba Pearl,10,70,Cash,8:44:30
+1186,440,04/05/2026 9:10,40,Matcha,Milk Tea,Regular,2,48,Whip Cream,20,116,Cash,9:10:52
+1186,441,04/05/2026 9:14,40,Strawberry,Green Tea,Regular,1,65,Nata,10,75,Cash,9:14:08
 1187,442,4/13/2026 14:44,32,Cookies & Cream,Non-Coffee Frappe,Venti,2,80,Yakult,30,190,Cash,14:44:27
 1188,443,3/20/2026 8:44,22,Green Apple,Fruit Soda,Regular,2,68,Chia Seeds,30,166,Cash,8:44:19
 1189,444,3/19/2026 16:29,5,Strawberry,Green Tea,Venti,1,65,Boba Pearl,10,75,Cash,16:29:16
 1190,445,3/21/2026 10:48,37,Nutella,Non-Coffee,Venti,1,75,Whip Cream,10,85,Cash,10:48:03
 1190,446,3/21/2026 9:45,17,Lychee,Oolong Tea,Regular,2,55,Yakult,30,140,Cash,9:45:10
 1191,447,3/20/2026 9:08,10,Matcha,Milk Tea,Grande,1,48,Chia Seeds,15,63,Cash,9:08:59
-1192,448,4/1/2026 13:59,44,Caramel,Frappuccino,Regular,1,85,None,0,85,Cash,13:59:54
-1192,449,4/1/2026 10:55,25,Green Apple,Fruit Soda,Regular,1,68,Boba Pearl,10,78,Cash,10:55:53
-1192,450,4/1/2026 10:59,36,Americano,Hot Coffee,Regular,1,58,None,0,58,Cash,10:59:16
-1193,451,4/10/2026 10:08,37,Iced Latte,Vietnamese Coffee,Regular,2,48,None,0,96,Cash,10:08:58
+1192,448,04/01/2026 13:59,44,Caramel,Frappuccino,Regular,1,85,None,0,85,Cash,13:59:54
+1192,449,04/01/2026 10:55,25,Green Apple,Fruit Soda,Regular,1,68,Boba Pearl,10,78,Cash,10:55:53
+1192,450,04/01/2026 10:59,36,Americano,Hot Coffee,Regular,1,58,None,0,58,Cash,10:59:16
+1193,451,04/10/2026 10:08,37,Iced Latte,Vietnamese Coffee,Regular,2,48,None,0,96,Cash,10:08:58
 1194,452,3/18/2026 14:17,12,Americano,Hot Coffee,Regular,1,58,Nata,10,68,Cash,14:17:53
 1194,453,3/18/2026 16:55,33,Strawberry Lemon,Lemonade,Venti,2,60,Whip Cream,20,140,Cash,16:55:50
 1194,454,3/18/2026 16:19,49,Blue Lemonade,Lemonade,Venti,2,60,Whip Cream,20,140,Cash,16:19:00
@@ -459,10 +459,10 @@ order_id,order_line_id,datetime,item_id,item_name,category,size,qty,unit_price,a
 1196,458,3/18/2026 9:40,11,Blue Lemonade,Lemonade,Regular,1,60,None,0,60,Cash,9:40:00
 1197,459,3/31/2026 16:59,27,Matcha,Milk Tea,Grande,1,48,Boba Pearl,10,58,Cash,16:59:04
 1198,460,3/26/2026 9:33,2,Strawberry,Yogurt Smoothies,Venti,2,70,Yakult,30,170,Cash,9:33:49
-1199,461,4/6/2026 9:54,35,Strawberry,Yogurt Smoothies,Venti,2,70,Whip Cream,20,160,Cash,9:54:44
-1199,462,4/6/2026 10:19,14,Lychee,Oolong Tea,Venti,2,55,Whip Cream,20,130,Cash,10:19:28
-1199,463,4/6/2026 16:06,10,Matcha,Milk Tea,Regular,1,48,None,0,48,Cash,16:06:40
-1200,1,2026-04-16 18:35:53,1200-1,Blueberry Lemonade,Walk-in,regular,1,50.00,,0.00,50.00,Cash,18:35:53
-1201,1,2026-04-18 04:29:22,1201-1,Blueberry,Walk-in,grande,1,60.00,,0.00,60.00,Cash,04:29:22
-1202,1,2026-04-18 04:29:41,1202-1,Blueberry Lemonade,Walk-in,regular,1,65.00,Nata,15.00,80.00,Cash,04:29:41
-1203,1,2026-04-18 04:29:56,1203-1,Green Apple Lemonade,Walk-in,regular,1,90.00,"Dutchmill, Chia Seeds",40.00,130.00,Cash,04:29:56
+1199,461,04/06/2026 9:54,35,Strawberry,Yogurt Smoothies,Venti,2,70,Whip Cream,20,160,Cash,9:54:44
+1199,462,04/06/2026 10:19,14,Lychee,Oolong Tea,Venti,2,55,Whip Cream,20,130,Cash,10:19:28
+1199,463,04/06/2026 16:06,10,Matcha,Milk Tea,Regular,1,48,None,0,48,Cash,16:06:40
+1200,1,16/04/2026 18:35,1200-1,Blueberry Lemonade,Walk-in,regular,1,50,,0,50,Cash,18:35:53
+1201,1,18/04/2026 4:29,1201-1,Blueberry,Walk-in,grande,1,60,,0,60,Cash,4:29:22
+1202,1,18/04/2026 4:29,1202-1,Blueberry Lemonade,Walk-in,regular,1,65,Nata,15,80,Cash,4:29:41
+1203,1,18/04/2026 4:29,1203-1,Green Apple Lemonade,Walk-in,regular,1,90,"Dutchmill, Chia Seeds",40,130,Cash,4:29:56

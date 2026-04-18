@@ -1,7 +1,7 @@
 import requests
 import time
 
-API_URL = "http://127.0.0.1:5000/api"
+API_URL = "https://softdes2-backend.onrender.com/"
 
 def run_automation_cycle():
     print("🤖 Bot: Checking inventory levels...")

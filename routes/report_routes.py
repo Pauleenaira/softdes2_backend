@@ -1,168 +1,154 @@
-import sqlite3
 import os
-from datetime import datetime, timedelta
+import pandas as pd
 from flask import Blueprint, request, jsonify
 
 report_bp = Blueprint('reports', __name__)
 
-def get_db_connection():
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    db_path = os.path.join(base_dir, "data", "cafe.db")
-    conn = sqlite3.connect(db_path)
-    conn.row_factory = sqlite3.Row
-    return conn
-
-def parse_db_date(date_str):
-    if not date_str:
-        return None
-    date_part = date_str.split(' ')[0] 
-    for fmt in ("%m/%d/%Y", "%Y-%m-%d", "%m-%d-%Y", "%d/%m/%Y", "%Y/%m/%d"):
-        try:
-            return datetime.strptime(date_part, fmt)
-        except ValueError:
-            continue
-    return None
-
-# ==========================================
-# 1. SUMMARY KPI ROUTE
-# ==========================================
-@report_bp.route("/range", methods=["GET"])
-def get_range_report():
-    start_str = request.args.get('start')
-    end_str = request.args.get('end')
+# ================= BACKEND =================
+# LOAD CSV DATA WITH ABSOLUTE PATH AND DATE FIX
+def load_data():
+    # Set up absolute path to prevent "File Not Found" errors
+    basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+    csv_path = os.path.join(basedir, "data", "monthly_Sales.csv")
     
     try:
-        if start_str and end_str:
-            start_date = datetime.strptime(start_str, "%Y-%m-%d")
-            end_date = datetime.strptime(end_str, "%Y-%m-%d").replace(hour=23, minute=59, second=59)
-        else:
-            start_date = datetime.min
-            end_date = datetime.max
+        df = pd.read_csv(csv_path)
+        df = df.dropna()
 
-        conn = get_db_connection()
-        sales = conn.execute("SELECT order_id, line_total, category, datetime FROM sales").fetchall()
-        conn.close()
-
-        total_sales = 0.0
-        unique_orders = set()
-        category_counts = {}
-
-        # The bad data we want to ignore from old tests
-        invalid_categories = ['Walk-in', 'Table 1', 'Table 2', 'Table 3', 'None', '', 'Drink']
-
-        for row in sales:
-            row_date = parse_db_date(row['datetime'])
-            if row_date and start_date <= row_date <= end_date:
-                total_sales += float(row['line_total'])
-                unique_orders.add(row['order_id'])
-                
-                cat = str(row['category'])
-                # 🔥 THE BOUNCER: Only count real categories
-                if cat not in invalid_categories:
-                    category_counts[cat] = category_counts.get(cat, 0) + 1
-
-        total_orders = len(unique_orders)
-        avg_order = (total_sales / total_orders) if total_orders > 0 else 0.0
-        top_category = max(category_counts, key=category_counts.get) if category_counts else "—"
-
-        return jsonify({
-            "total_sales": round(total_sales, 2),
-            "total_orders": total_orders,
-            "avg_order": round(avg_order, 2),
-            "top_category": top_category
-        })
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-# ==========================================
-# 2. CHART DATA ROUTE
-# ==========================================
-@report_bp.route("/chart", methods=["GET"])
-def get_chart_data():
-    days_range = int(request.args.get('range', 7))
-    
-    conn = get_db_connection()
-    sales = conn.execute("SELECT line_total, datetime FROM sales").fetchall()
-    conn.close()
-    
-    try:
-        valid_sales = []
-        for row in sales:
-            rd = parse_db_date(row['datetime'])
-            if rd:
-                valid_sales.append({"date": rd, "total": float(row['line_total'])})
-                
-        if not valid_sales: return jsonify([])
-            
-        max_date = max(sale["date"] for sale in valid_sales)
-        cutoff_date = max_date - timedelta(days=days_range)
+        # 🔥 THE FIX: Added dayfirst=True and errors='coerce' to handle DD/MM/YYYY
+        df["datetime"] = pd.to_datetime(df["datetime"], dayfirst=True, errors='coerce')
         
-        daily_sales = {}
-        for sale in valid_sales:
-            if sale["date"] > cutoff_date:
-                d_str = sale["date"].strftime("%b %d")
-                daily_sales[d_str] = daily_sales.get(d_str, 0) + sale["total"]
-                
-        chart_data = []
-        for i in range(days_range - 1, -1, -1):
-            curr_date = max_date - timedelta(days=i)
-            d_str = curr_date.strftime("%b %d")
-            chart_data.append({
-                "date": d_str,
-                "sales": round(daily_sales.get(d_str, 0.0), 2)
-            })
-            
-        return jsonify(chart_data)
+        # Remove any rows where the date couldn't be parsed
+        df = df.dropna(subset=['datetime'])
+        
+        return df
     except Exception as e:
-        return jsonify([]), 500
+        print(f"Error loading report data: {e}")
+        return pd.DataFrame() # Return empty if file fails
 
+# ================= BACKEND =================
+# DEFAULT REPORT (KPI)
+@report_bp.route('/', methods=['GET'])
+def get_reports():
+    df = load_data()
+    if df.empty:
+        return jsonify({"total_sales": 0, "total_orders": 0, "avg_order": 0, "top_category": "N/A"})
 
-# ==========================================
-# 3. DAILY TABLE ROUTE
-# ==========================================
-@report_bp.route("/daily", methods=["GET"])
-def get_daily_table():
-    conn = get_db_connection()
-    sales = conn.execute("SELECT order_id, line_total, category, datetime FROM sales").fetchall()
-    conn.close()
+    total_sales = df["line_total"].sum()
+    total_orders = df["order_id"].nunique()
+    avg_order = total_sales / total_orders if total_orders else 0
     
-    daily_summary = {}
-    invalid_categories = ['Walk-in', 'Table 1', 'Table 2', 'Table 3', 'None', '', 'Drink']
-    
-    try:
-        for row in sales:
-            row_date = parse_db_date(row['datetime'])
-            if not row_date: continue
-                
-            clean_date_str = row_date.strftime("%Y-%m-%d")
-            
-            if clean_date_str not in daily_summary:
-                daily_summary[clean_date_str] = {"orders": set(), "total_sales": 0.0, "categories": {}}
-                
-            daily_summary[clean_date_str]["orders"].add(row['order_id'])
-            daily_summary[clean_date_str]["total_sales"] += float(row['line_total'])
-            
-            cat = str(row['category'])
-            # 🔥 THE BOUNCER: Only count real categories
-            if cat not in invalid_categories:
-                daily_summary[clean_date_str]["categories"][cat] = daily_summary[clean_date_str]["categories"].get(cat, 0) + 1
+    # Calculate top category
+    cat_counts = df["category"].value_counts()
+    top_category = cat_counts.idxmax() if not cat_counts.empty else "N/A"
 
-        formatted_data = []
-        for date_str, data in sorted(daily_summary.items(), reverse=True): 
-            order_count = len(data["orders"])
-            mock_handling_time = round(1.2 + (order_count * 0.05), 1)
-            
-            top_cat = max(data["categories"], key=data["categories"].get) if data["categories"] else "—"
-            
-            formatted_data.append({
-                "date": date_str,
-                "orders": order_count,
-                "total_sales": round(data["total_sales"], 2),
-                "avg_handling": f"{mock_handling_time} s",
-                "top_category": top_cat
-            })
-            
-        return jsonify(formatted_data[:15])
-    except Exception as e:
-        return jsonify([]), 500
+    return jsonify({
+        "total_sales": float(total_sales),
+        "total_orders": int(total_orders),
+        "avg_order": float(avg_order),
+        "top_category": top_category
+    })
+
+# ================= BACKEND =================
+# DATE FILTER REPORT
+@report_bp.route('/range', methods=['GET'])
+def report_by_range():
+    start = request.args.get("start")
+    end = request.args.get("end")
+
+    df = load_data()
+    if df.empty:
+        return jsonify({"total_sales": 0, "total_orders": 0, "avg_order": 0, "top_category": "N/A"})
+
+    df["date_only"] = df["datetime"].dt.date
+
+    # Filter by range if dates are provided
+    if start and end:
+        filtered = df[
+            (df["date_only"] >= pd.to_datetime(start).date()) &
+            (df["date_only"] <= pd.to_datetime(end).date())
+        ]
+    else:
+        filtered = df
+
+    total_sales = filtered["line_total"].sum()
+    total_orders = filtered["order_id"].nunique()
+    avg_order = total_sales / total_orders if total_orders else 0
+
+    cat_counts = filtered["category"].value_counts()
+    top_category = cat_counts.idxmax() if not cat_counts.empty else "N/A"
+
+    return jsonify({
+        "total_sales": float(total_sales),
+        "total_orders": int(total_orders),
+        "avg_order": float(avg_order),
+        "top_category": top_category
+    })
+
+# ================= BACKEND =================
+# DAILY SUMMARY (TABLE DATA)
+@report_bp.route('/daily', methods=['GET'])
+def daily_summary():
+    df = load_data()
+    if df.empty:
+        return jsonify([])
+
+    df["date_only"] = df["datetime"].dt.date
+    grouped = df.groupby("date_only")
+
+    result = []
+    for date, group in grouped:
+        total_sales = group["line_total"].sum()
+        total_orders = group["order_id"].nunique()
+        cat_counts = group["category"].value_counts()
+        top_cat = cat_counts.idxmax() if not cat_counts.empty else "N/A"
+
+        result.append({
+            "date": str(date),
+            "orders": int(total_orders),
+            "total_sales": float(total_sales),
+            "top_category": top_cat,
+            "avg_handling": "02:15" # Placeholder for demo
+        })
+
+    # Sort latest first
+    result = sorted(result, key=lambda x: x["date"], reverse=True)
+    return jsonify(result)
+
+# ================= BACKEND =================
+# CHART DATA
+@report_bp.route('/chart', methods=['GET'])
+def chart_data():
+    range_type = request.args.get("range", "7")
+    df = load_data()
+    if df.empty:
+        return jsonify([])
+
+    df["date_only"] = df["datetime"].dt.date
+    
+    # Use the max date in the dataset as "today" for historical CSV data
+    latest_date = df["date_only"].max()
+
+    if range_type == "1":
+        start = latest_date
+    elif range_type == "3":
+        start = latest_date - pd.Timedelta(days=3)
+    elif range_type == "7":
+        start = latest_date - pd.Timedelta(days=7)
+    elif range_type == "30":
+        start = latest_date - pd.Timedelta(days=30)
+    else:
+        start = latest_date - pd.Timedelta(days=7)
+
+    filtered = df[df["date_only"] >= start]
+    grouped = filtered.groupby("date_only")["line_total"].sum().reset_index()
+
+    result = [
+        {
+            "date": str(row["date_only"]),
+            "sales": float(row["line_total"])
+        }
+        for _, row in grouped.iterrows()
+    ]
+
+    return jsonify(result)

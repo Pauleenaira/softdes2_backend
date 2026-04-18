@@ -1,127 +1,190 @@
-import sqlite3
+# backend/routes/order_routes.py
 import os
-import subprocess
+import csv
 from datetime import datetime
 from flask import Blueprint, request, jsonify
 
-order_bp = Blueprint('orders', __name__)
+order_bp = Blueprint("orders", __name__)
 
-def get_db_connection():
+CSV_HEADERS = [
+    "order_id",
+    "order_line_id",
+    "datetime",
+    "item_id",
+    "item_name",
+    "category",
+    "size",
+    "qty",
+    "unit_price",
+    "addons",
+    "addons_total",
+    "line_total",
+    "payment_method",
+    "time_of_order",
+]
+
+
+def get_csv_path():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    db_path = os.path.join(base_dir, "data", "cafe.db")
-    conn = sqlite3.connect(db_path)
-    conn.row_factory = sqlite3.Row
-    return conn
+    return os.path.join(base_dir, "data", "monthly_Sales.csv")
 
-# Helper function to deduct stock safely using LIKE to catch variations
-def deduct_stock(cursor, ingredient_keyword, amount):
-    cursor.execute('''
-        UPDATE inventory 
-        SET current_stock = current_stock - ? 
-        WHERE LOWER(item_name) LIKE ?
-    ''', (amount, f"%{ingredient_keyword.lower()}%"))
+
+def get_next_order_id():
+    csv_path = get_csv_path()
+    if not os.path.exists(csv_path):
+        return 1
+
+    max_order_id = 0
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                oid = int(row.get("order_id", 0))
+                if oid > max_order_id:
+                    max_order_id = oid
+            except ValueError:
+                continue
+    return max_order_id + 1
+
 
 @order_bp.route("/", methods=["POST"])
-def place_order():
-    data = request.get_json()
-    cart = data.get('cart', [])
-    payment_method = data.get('payment_method', 'Cash')
-    
-    if not cart:
-        return jsonify({"error": "Cart is empty"}), 400
-
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    
-    # 1. Generate a new Order ID
-    last_order = cursor.execute("SELECT MAX(order_id) FROM sales").fetchone()[0]
-    new_order_id = (last_order or 1000) + 1
-    
-    current_time = datetime.now()
-    date_str = current_time.strftime("%Y-%m-%d %H:%M:%S")
-    time_str = current_time.strftime("%H:%M:%S")
-
+def create_order():
+    """
+    Expected JSON body from frontend:
+    {
+      "items": [
+        {
+          "id": "...",
+          "name": "Matcha",
+          "size": "grande",
+          "addons": [{ "name": "Oreo", "price": 10 }, ...],
+          "unitPrice": 58,
+          "qty": 2
+        },
+        ...
+      ],
+      "total": 250.0,
+      "cash": 300.0,
+      "change": 50.0,
+      "table": "Walk-in",
+      "payment_method": "Cash"
+    }
+    """
     try:
-        line_id = 1
-        for item in cart:
-            item_name = item.get('item_name', '')
-            qty = int(item.get('qty', 1))
-            
-            # 2. SAVE TO SALES TABLE
-            cursor.execute('''
-                INSERT INTO sales (
-                    order_id, order_line_id, datetime, item_id, item_name, 
-                    category, size, qty, unit_price, addons, addons_total, 
-                    line_total, payment_method, time_of_order
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ''', (
-                new_order_id, line_id, date_str, item.get('id', '00'), 
-                item_name, item.get('category', 'Drink'), item.get('size', 'Regular'), 
-                qty, item.get('unit_price', 0), item.get('addons', 'None'), 
-                item.get('addons_total', 0), item.get('line_total', 0), 
-                payment_method, time_str
-            ))
-            
-            # 3. SMART RECIPE DEDUCTION
-            name_lower = item_name.lower()
-            
-            # Deduct Coffee Base
-            if any(word in name_lower for word in ["americano", "latte", "espresso", "macchiato", "coffee", "mocha"]):
-                deduct_stock(cursor, "coffee bean", 18 * qty)
-                
-            # Deduct Milk Base
-            if any(word in name_lower for word in ["latte", "milk", "frappe", "frappuccino", "cream", "macchiato"]):
-                deduct_stock(cursor, "milk", 150 * qty)
-                
-            # Deduct Lemonade Base
-            if "lemon" in name_lower:
-                deduct_stock(cursor, "lemon", 1 * qty) 
-                
-            # Deduct Flavor Syrups/Powders
-            if "matcha" in name_lower: deduct_stock(cursor, "matcha", 20 * qty)
-            if "strawberry" in name_lower: deduct_stock(cursor, "strawberry", 20 * qty)
-            if "blueberry" in name_lower: deduct_stock(cursor, "blueberry", 20 * qty)
-            if "lychee" in name_lower: deduct_stock(cursor, "lychee", 20 * qty)
-            if "peach" in name_lower: deduct_stock(cursor, "peach", 20 * qty)
-            if "caramel" in name_lower: deduct_stock(cursor, "caramel", 20 * qty)
-            if any(w in name_lower for w in ["choco", "mocha", "nutella"]): 
-                deduct_stock(cursor, "cocoa", 20 * qty)
-                
-            # 4. DEDUCT ADDONS
-            if item.get('addons') and item.get('addons') != 'None':
-                addons_list = item.get('addons').split(", ")
-                for addon in addons_list:
-                    deduct_stock(cursor, addon, 20 * qty)
+        data = request.get_json(force=True, silent=False)
 
-            line_id += 1
+        items = data.get("items", [])
+        total = float(data.get("total", 0))
+        cash = float(data.get("cash", 0))
+        change = float(data.get("change", 0))
+        table = data.get("table", "Walk-in")
+        payment_method = data.get("payment_method", "Cash")
 
-        # 5. UPDATE INVENTORY STATUS
-        cursor.execute('''
-            UPDATE inventory
-            SET status = CASE
-                WHEN current_stock <= 0 THEN 'Out of Stock'
-                WHEN current_stock <= (reorder_level * 0.25) THEN 'Critical'
-                WHEN current_stock <= reorder_level THEN 'Low'
-                ELSE 'Normal'
-            END
-        ''')
+        if not items:
+            return jsonify({"error": "Cart is empty"}), 400
 
-        # 6. TRIGGER RPA BOT IF NECESSARY
-        # If any item is now Critical, trigger the external RPA script automatically
-        critical_check = cursor.execute("SELECT COUNT(*) FROM inventory WHERE status = 'Critical'").fetchone()[0]
-        if critical_check > 0:
-            # This wakes up the bot to handle reordering immediately
-            subprocess.Popen(["python", "rpa_agent.py"]) 
+        order_id = get_next_order_id()
+        now = datetime.now()
+        dt_str = now.strftime("%Y-%m-%d %H:%M:%S")
+        time_str = now.strftime("%H:%M:%S")
 
-        conn.commit()
-        return jsonify({
-            "success": True, 
-            "message": "Order placed, inventory updated, and RPA notified!", 
-            "order_id": new_order_id
-        }), 201
+        csv_path = get_csv_path()
+        file_exists = os.path.exists(csv_path)
+
+        rows_to_write = []
+        line_index = 1
+
+        for item in items:
+            name = item.get("name", "")
+            size = item.get("size", "")
+            qty = int(item.get("qty", 1))
+            unit_price = float(item.get("unitPrice", 0))
+
+            # addons: list of { name, price }
+            addons_list = item.get("addons", []) or []
+            addons_names = ", ".join(a.get("name", "") for a in addons_list)
+            addons_total = sum(float(a.get("price", 0)) for a in addons_list)
+
+            line_total = unit_price * qty
+
+            # You said item_id matters, but you didn't give IDs per menu item.
+            # We'll generate a simple one: f"{order_id}-{line_index}"
+            item_id = f"{order_id}-{line_index}"
+
+            row = {
+                "order_id": str(order_id),
+                "order_line_id": str(line_index),
+                "datetime": dt_str,
+                "item_id": item_id,
+                "item_name": name,
+                "category": table,  # you can change this if you have real category
+                "size": size,
+                "qty": str(qty),
+                "unit_price": f"{unit_price:.2f}",
+                "addons": addons_names,
+                "addons_total": f"{addons_total:.2f}",
+                "line_total": f"{line_total:.2f}",
+                "payment_method": payment_method,
+                "time_of_order": time_str,
+            }
+            rows_to_write.append(row)
+            line_index += 1
+
+        # Append to CSV
+        with open(csv_path, mode="a", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=CSV_HEADERS)
+            if not file_exists:
+                writer.writeheader()
+            for row in rows_to_write:
+                writer.writerow(row)
+
+        return jsonify(
+            {
+                "success": True,
+                "order_id": order_id,
+                "total": total,
+                "cash": cash,
+                "change": change,
+                "lines_written": len(rows_to_write),
+            }
+        ), 201
 
     except Exception as e:
-        conn.rollback()
         return jsonify({"error": str(e)}), 500
-    finally:
-        conn.close()
+
+
+@order_bp.route("/", methods=["GET"])
+def list_orders():
+    """
+    Simple list of order_ids and totals (for future use).
+    """
+    try:
+        csv_path = get_csv_path()
+        if not os.path.exists(csv_path):
+            return jsonify([])
+
+        orders = {}
+        with open(csv_path, newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                oid = row.get("order_id")
+                if not oid:
+                    continue
+                line_total = float(row.get("line_total", 0))
+                dt = row.get("datetime")
+
+                if oid not in orders:
+                    orders[oid] = {
+                        "order_id": oid,
+                        "datetime": dt,
+                        "total": 0.0,
+                    }
+                orders[oid]["total"] += line_total
+                # latest datetime
+                if dt and orders[oid]["datetime"]:
+                    if dt > orders[oid]["datetime"]:
+                        orders[oid]["datetime"] = dt
+
+        return jsonify(list(orders.values()))
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
